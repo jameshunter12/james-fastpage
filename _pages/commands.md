@@ -5,8 +5,10 @@ title: Commands
 search_exclude: true
 ---
 
-Input: It is used to take input from the user.
+# Vocabulary
 
-Output: Printing the result of the users input
+- Input: It is used to take input from the user.
 
-ipynb: It used to create a new Jupyter notebook.
+- Output: Printing the result of the users input
+
+- ipynb: It used to create a new Jupyter notebook.
