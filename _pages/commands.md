@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /search/
+permalink: /Commands/
 title: Commands
 search_exclude: true
 ---
