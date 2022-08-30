@@ -67,7 +67,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/james-fastpage/about/">About Me</a><a class="page-link" href="/james-fastpage/Commands/">Commands</a><a class="page-link" href="/james-fastpage/search/">Search</a><a class="page-link" href="/james-fastpage/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/james-fastpage/about/">About Me</a><a class="page-link" href="/james-fastpage/search/">Search</a><a class="page-link" href="/james-fastpage/categories/">Tags</a><a class="page-link" href="/james-fastpage/Vocabulary/">Vocabulary</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -148,24 +148,24 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span> 
  
 <span class="k">class</span> <span class="nc">Question</span><span class="p">:</span>
-     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prompt</span><span class="p">,</span> <span class="n">answer</span><span class="p">):</span>
+     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prompt</span><span class="p">,</span> <span class="n">answer</span><span class="p">):</span> <span class="c1"># Defines variables</span>
           <span class="bp">self</span><span class="o">.</span><span class="n">prompt</span> <span class="o">=</span> <span class="n">prompt</span>
           <span class="bp">self</span><span class="o">.</span><span class="n">answer</span> <span class="o">=</span> <span class="n">answer</span>
- 
+ <span class="c1"># This is my list of questions with questions and answer choices</span>
 <span class="n">question_prompts</span> <span class="o">=</span> <span class="p">[</span>
      <span class="s2">"How many lines are in a sequence of code? </span><span class="se">\n</span><span class="s2">(a)2 or more </span><span class="se">\n</span><span class="s2">(b)1"</span><span class="p">,</span>
      <span class="s2">"Does (base) come from Anaconda?</span><span class="se">\n</span><span class="s2">yes/</span><span class="se">\n</span><span class="s2">no"</span><span class="p">,</span>
      <span class="s2">"Are we in APCSP? </span><span class="se">\n</span><span class="s2">yes/</span><span class="se">\n</span><span class="s2">no"</span><span class="p">,</span>
      <span class="s2">"What grade do you want in this class? (C)</span><span class="se">\n</span><span class="s2">(A)</span><span class="se">\n</span><span class="s2">(B)</span><span class="se">\n</span><span class="s2">(A+)"</span><span class="p">,</span>
 <span class="p">]</span>
- 
+<span class="c1"># Answers</span>
 <span class="n">questions</span> <span class="o">=</span> <span class="p">[</span>
      <span class="n">Question</span><span class="p">(</span><span class="n">question_prompts</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">"a"</span><span class="p">),</span>
      <span class="n">Question</span><span class="p">(</span><span class="n">question_prompts</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">"yes"</span><span class="p">),</span>
      <span class="n">Question</span><span class="p">(</span><span class="n">question_prompts</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s2">"yes"</span><span class="p">),</span>
      <span class="n">Question</span><span class="p">(</span><span class="n">question_prompts</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="s2">"A+"</span><span class="p">),</span>
 <span class="p">]</span>
- 
+<span class="c1"># Prints score (correct answer = score + 1)</span>
 <span class="k">def</span> <span class="nf">run_quiz</span><span class="p">(</span><span class="n">questions</span><span class="p">):</span>
      <span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
      <span class="k">for</span> <span class="n">question</span> <span class="ow">in</span> <span class="n">questions</span><span class="p">:</span>
