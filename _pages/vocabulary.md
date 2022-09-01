@@ -7,7 +7,7 @@ search_exclude: true
 
 # Vocabulary
 
-If statement - if proved treu, preforms a function
+If statement - if proved true, preforms a function
 
 Variable - a value that can change depending on the conditions
 
@@ -20,3 +20,5 @@ Boolean - value that is either true or false
 Push/Pull - to send/receives code to and from GitHub
 
 Markdown - syntax used to format plain text
+
+Procedule Extraction - taking smaller pices of code and using it to make something bigger
