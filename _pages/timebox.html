@@ -1,0 +1,24 @@
+---
+layout: default
+permalink: /timebox/
+title: Timebox
+search_exclude: true
+---
+ 
+<table>
+ 
+   <tr>
+       <th>Week</th>
+       <th>Unit</th>
+   </tr>
+ 
+   {% for i in (0..site.week_number) %}
+ 
+   <tr>
+       <td>{{ i }}</td>
+       <td>{{ site.weekly_units[i] }}</td>
+   </tr>
+ 
+   {% endfor %}
+ 
+</table>
