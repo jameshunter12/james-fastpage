@@ -82,7 +82,7 @@ html_escape:
 
 weekly_units: [Tool Setup, Intro to Python, Data Abstraction, Creative Development]
 week_number: 3
-summary: [In the week I began istalling important tools like Phython and Anaconda. I also was introduced to new things like VS Code and Fastpages, ]
+
 
 # Everything below here should be left alone. Modifications may break fastpages
 future: true
