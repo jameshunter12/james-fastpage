@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -143,53 +143,18 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">"ABC"</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"What us the value of variable name?"</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">langs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Python"</span><span class="p">,</span> <span class="s2">"JavaScript"</span><span class="p">,</span> <span class="s2">"Java"</span><span class="p">,</span> <span class="s2">"Bash"</span><span class="p">,</span> <span class="s2">"HTML"</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"langs"</span><span class="p">,</span> <span class="n">langs</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">langs</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"- langs[0]"</span><span class="p">,</span> <span class="n">langs</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="nb">type</span><span class="p">(</span><span class="n">langs</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># variable of type string</span>
 <span class="n">name</span> <span class="o">=</span> <span class="s2">"James Hunter"</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"name"</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">()</span>
 
 <span class="c1"># variable of type integer</span>
 <span class="n">age</span> <span class="o">=</span> <span class="mi">15</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"age"</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">age</span><span class="p">))</span>
 
 <span class="c1"># variable of type float</span>
-<span class="n">weight</span> <span class="o">=</span> <span class="mi">135</span>
+<span class="n">weight</span> <span class="o">=</span> <span class="mi">136</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"weight"</span><span class="p">,</span> <span class="n">weight</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">weight</span><span class="p">))</span>
 
 <span class="nb">print</span><span class="p">()</span>
@@ -216,6 +181,29 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>name James Hunter &lt;class 'str'&gt;
+
+age 15 &lt;class 'int'&gt;
+weight 136 &lt;class 'int'&gt;
+
+langs ['Python', 'JavaScript', 'Java', 'Bash', 'HTML'] &lt;class 'list'&gt;
+- langs[0] Python &lt;class 'str'&gt;
+
+person {'name': 'James Hunter', 'age': 15, 'weight': 136, 'langs': ['Python', 'JavaScript', 'Java', 'Bash', 'HTML']} &lt;class 'dict'&gt;
+- person["name"] James Hunter &lt;class 'str'&gt;
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -235,7 +223,7 @@ window.onload = wrap_img;
     <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"February 23"</span><span class="p">,</span>
     <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
     <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"12james15545@gmail.com"</span><span class="p">,</span>
-    <span class="s2">"Soccer Number"</span><span class="p">:</span> <span class="s2">"12"</span><span class="p">,</span>
+    <span class="s2">"Weight"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"136"</span><span class="p">]</span>
 <span class="p">})</span><span class="c1">#InfoDb[0]</span>
 
 <span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
@@ -244,6 +232,7 @@ window.onload = wrap_img;
     <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"June 17th"</span><span class="p">,</span>
     <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
     <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"nick@hunter-il.com"</span><span class="p">,</span>
+    <span class="s2">"Weight"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"155"</span><span class="p">]</span>
 <span class="p">})</span> <span class="c1"># InfoDb[1</span>
 
 
@@ -255,6 +244,22 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+[{'FirstName': 'James', 'LastName': 'Hunter', 'DOB': 'February 23', 'Residence': 'San Diego', 'Email': '12james15545@gmail.com', 'Weight': ['136']}, {'FirstName': 'Nick', 'LastName': 'Hunter', 'DOB': 'June 17th', 'Residence': 'San Diego', 'Email': 'nick@hunter-il.com', 'Weight': ['155']}]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -288,6 +293,27 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>For loop output
+
+James Hunter
+	 Residence: San Diego
+	 Birth Day: February 23
+	 Socer Number: 12Nick Hunter
+	 Residence: San Diego
+	 Birth Day: June 17th
+	 Socer Number: 12</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -314,6 +340,27 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>While loop output
+
+James Hunter
+	 Residence: San Diego
+	 Birth Day: February 23
+	 Socer Number: 12Nick Hunter
+	 Residence: San Diego
+	 Birth Day: June 17th
+	 Socer Number: 12</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -336,6 +383,27 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Recursive loop output
+
+James Hunter
+	 Residence: San Diego
+	 Birth Day: February 23
+	 Socer Number: 12Nick Hunter
+	 Residence: San Diego
+	 Birth Day: June 17th
+	 Socer Number: 12</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -378,6 +446,25 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>James Hunter
+	 Residence: San Diego
+	 Birth Day: February 23
+	 Socer Number: 12Nick Hunter
+	 Residence: San Diego
+	 Birth Day: June 17th
+	 Socer Number: 12</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -400,6 +487,22 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[5, 4, 3, 2, 1]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -416,6 +519,22 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>5</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -440,6 +559,20 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>['F', 'D', 'C', 'B', 'A']
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -456,6 +589,22 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>'B'</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
