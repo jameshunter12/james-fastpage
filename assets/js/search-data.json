@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Theme Change",
-            "content": "Chaning Remote Theme . My Attempt at Changing the Remote Theme . toc: true | badges: true | comments: true | categories: [jupyter, ] | . . .",
-            "url": "https://jameshunter12.github.io/james-fastpage/2022/09/06/theme-change.html",
-            "relUrl": "/2022/09/06/theme-change.html",
+            "title": "My Attempt at Changing the Remote Theme",
+            "content": ". .",
+            "url": "https://jameshunter12.github.io/james-fastpage/jupyter/2022/09/06/theme-change.html",
+            "relUrl": "/jupyter/2022/09/06/theme-change.html",
             "date": " • Sep 6, 2022"
         }
         
@@ -13,10 +13,10 @@
   
     
         ,"post1": {
-            "title": "Dictionary Quiz",
-            "content": "class Question: def __init__(self, prompt, answer): self.prompt = prompt self.answer = answer question_prompts = [ &quot;What is the name of the syntax that can pass variables in html? n n&quot;, &quot;What is it called for a command you give your computer? n n&quot;, &quot;Is it important to define your varibles? n n&quot;, &quot;If you do not definne your varibles what will happen when you try and run the code? n n&quot;, ] questions = [ Question(question_prompts[0], &quot;liquid&quot;), Question(question_prompts[1], &quot;input&quot;), Question(question_prompts[2], &quot;yes&quot;), Question(question_prompts[3], &quot;syntax error&quot;), ] def run_quiz(questions): score = 0 for question in questions: answer = input(question.prompt) if answer == question.answer: score += 1 print(&quot;you got&quot;, score, &quot;out of&quot;, len(questions)) run_quiz(questions) . you got 0 out of 4 .",
-            "url": "https://jameshunter12.github.io/james-fastpage/jupter/python/2022/09/05/dictionary-quiz.html",
-            "relUrl": "/jupter/python/2022/09/05/dictionary-quiz.html",
+            "title": "Title",
+            "content": "Dictionary Quiz . A quiz that cotains important dictionary terms . toc:true- badges: true | comments: true | categories: [jupter, python] | . class Question: def __init__(self, prompt, answer): self.prompt = prompt self.answer = answer question_prompts = [ &quot;What is the name of the syntax that can pass variables in html? n n&quot;, &quot;What is it called for a command you give your computer? n n&quot;, &quot;Is it important to define your varibles? n n&quot;, &quot;If you do not definne your varibles what will happen when you try and run the code? n n&quot;, ] questions = [ Question(question_prompts[0], &quot;liquid&quot;), Question(question_prompts[1], &quot;input&quot;), Question(question_prompts[2], &quot;yes&quot;), Question(question_prompts[3], &quot;syntax error&quot;), ] def run_quiz(questions): score = 0 for question in questions: answer = input(question.prompt) if answer == question.answer: score += 1 print(&quot;you got&quot;, score, &quot;out of&quot;, len(questions)) run_quiz(questions) . you got 0 out of 4 .",
+            "url": "https://jameshunter12.github.io/james-fastpage/2022/09/05/dictionary-quiz.html",
+            "relUrl": "/2022/09/05/dictionary-quiz.html",
             "date": " • Sep 5, 2022"
         }
         
