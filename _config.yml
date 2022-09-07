@@ -80,7 +80,7 @@ default_badges:
 html_escape:
   description: false
 
-summary: [During the tool setup we learned about all of the resources that we would be using throughout the school year like Python, Anaconda, and VS CODE. After that we tested some of the tools like Jupyter notebooks and fastpages.,During the Intro to python week we learned about the intro of python and we learned about setting up work using Bash kernal and establishing PBL habits which helped focused mindset in the classroom.,During week 2 we learnedabout Data Abstraction. In the beggining of the week we were shown dictionaries. We also learned about how all Computer Science fields are related to data.,TBD]
+summary: [During the tool setup we learned about all of the resources that we would be using throughout the school year. After that we tested some of the tools like Jupyter notebooks and fastpages.,During the Intro to python week we learned about the intro of python and we learned about setting up work using Bash kernal and establishing PBL habits which helped focused mindset in the classroom.,During week 2 we learnedabout Data Abstraction. In the beggining of the week we were shown dictionaries. We also learned about how all Computer Science fields are related to data.,TBD]
 weekly_units: [Tool Setup, Intro to Python, Data Abstraction, Creative Development]
 completed: [Yes,Yes,Yes,No]
 week_number: 3
