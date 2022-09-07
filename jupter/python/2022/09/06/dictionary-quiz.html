@@ -147,21 +147,21 @@ window.onload = wrap_img;
      <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prompt</span><span class="p">,</span> <span class="n">answer</span><span class="p">):</span>
           <span class="bp">self</span><span class="o">.</span><span class="n">prompt</span> <span class="o">=</span> <span class="n">prompt</span>
           <span class="bp">self</span><span class="o">.</span><span class="n">answer</span> <span class="o">=</span> <span class="n">answer</span>
-
+<span class="c1">#These are the questions followed by the possible answers</span>
 <span class="n">question_prompts</span> <span class="o">=</span> <span class="p">[</span>
      <span class="s2">"What is the name of the syntax that can pass variables in html? </span><span class="se">\n\n</span><span class="s2">"</span><span class="p">,</span>
      <span class="s2">"What is it called for a command you give your computer? </span><span class="se">\n\n</span><span class="s2">"</span><span class="p">,</span>
      <span class="s2">"Is it important to define your varibles?</span><span class="se">\n\n</span><span class="s2">"</span><span class="p">,</span>
      <span class="s2">"If you do not definne your varibles what will happen when you try and run the code?</span><span class="se">\n\n</span><span class="s2">"</span><span class="p">,</span>
 <span class="p">]</span>
-
+<span class="c1">#These are the answers to the questions above</span>
 <span class="n">questions</span> <span class="o">=</span> <span class="p">[</span>
      <span class="n">Question</span><span class="p">(</span><span class="n">question_prompts</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">"liquid"</span><span class="p">),</span>
      <span class="n">Question</span><span class="p">(</span><span class="n">question_prompts</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">"input"</span><span class="p">),</span>
      <span class="n">Question</span><span class="p">(</span><span class="n">question_prompts</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s2">"yes"</span><span class="p">),</span>
      <span class="n">Question</span><span class="p">(</span><span class="n">question_prompts</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="s2">"syntax error"</span><span class="p">),</span>
 <span class="p">]</span>
-
+<span class="c1">#This is used to tell you your score</span>
 <span class="k">def</span> <span class="nf">run_quiz</span><span class="p">(</span><span class="n">questions</span><span class="p">):</span>
      <span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
      <span class="k">for</span> <span class="n">question</span> <span class="ow">in</span> <span class="n">questions</span><span class="p">:</span>
@@ -183,7 +183,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>you got 0 out of 4
+<pre>you got 4 out of 4
 </pre>
 </div>
 </div>
