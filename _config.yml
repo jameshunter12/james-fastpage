@@ -80,6 +80,7 @@ default_badges:
 html_escape:
   description: false
 
+#Each of these variables that are followed by a colon are a seperate coloumn in the timebox. Each varible is followed by information. The information is seperated by a comma (creates a new column.)
 summary: [During the tool setup we learned about all of the resources that we would be using throughout the school year. After that we tested some of the tools like Jupyter notebooks and fastpages. We also learned how to use Python and VS Code., During the Intro to python week we learned about the basics python and we learned about setting up work using Bash kernal and we also did a tool check that made sure we had all of the correct tools installed., During week 2 we learned about Data Abstraction. In the beggining of the week we were shown dictionaries. We learned ways to store our personal data with Infodb.append,TBD]
 weekly_units: [Tool Setup, Intro to Python, Data Abstraction, Creative Development]
 completed: [Yes,Yes,Yes,No]
@@ -107,6 +108,7 @@ plugins:
 paginate: 15
 paginate_path: /page:num/
 
+#to change to theme you have to remove the "minima" and place to code for a new theme, but it is not good to leave it in a different theme than "minima"
 remote_theme: jekyll/minima
 
 titles_from_headings:
