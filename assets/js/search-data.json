@@ -3,9 +3,9 @@
     
         "post0": {
             "title": "Quiz Plan",
-            "content": "My quiz plan: . Create a quiz similar to the example (so I can understand the program) | Brainstorm (What will make my website different)) | Create (Use what I know from building the original quiz and the brainstorm plan to create what website I had in mind) | Check/ Ask (Ask teacher and classmates if anything needs to be added or changed) | . Drafting: . For my code I used a simple repeating command “on event (“Button name”,”click”, function(){“ (what this did was basically set the command for a button to take you to a separate page) . Data Abstraction . An example of Data Abstraction in this program is the “font size” chart. It holds multiple selections that represent different sizes. A random number function takes a random size selection from the list and sets the default font size to that selection. . The point . The point of the assignment was to get comfortable with code.org but specifically java script. . # Managing Complexity . An example of complexity management in this quiz is the layout. The quiz is divided into two parts: pasword and exploration in the program. This can easily be seen in the first part of the code, each command has its own defined function. . Challenges . Since I created a Jeopardy game there were lots of buttons that I had to create so I had to make sure the names were correct, so I could easily find them, I also had a little trouble while making a question with text entry. .",
-            "url": "https://jameshunter12.github.io/james-fastpage/markdown/2022/09/12/quiz-plan.html",
-            "relUrl": "/markdown/2022/09/12/quiz-plan.html",
+            "content": "My quiz plan: . Create a quiz similar to the example that was more complex (so I can understand the program) | Think (What will make my website different)) | Create (Use what I know from the lesson and the brainstorm plan to create what website I had in mind) | Check/ Ask (Ask teacher and classmates if anything needs to be added or changed) | . Drafting: . For my code I used a simple repeating command “on event (“Button name”,”click”, function(){“ (This was used throughout my whole quiz) I wanted to create a question that requires them to type in the answer (code below) . onEvent(“enter”, “click”, function( ) { console.log(“answerbutton entered text: “ + getText(“text-input”)); if (getText(“text-input”) == “Ronaldo”) { setScreen(“end”); } else { setScreen(“incorrect”); } }); . Data Abstraction . An example of Data Abstraction in this program is the “font size” chart. It holds multiple selections that represent different sizes. A random number function takes a random size selection from the list and sets the default font size to that selection. . The point . The point of the assignment was to get comfortable with code.org but specifically java script. . # Managing Complexity . An example of complexity management in this quiz is the layout. The quiz is divided into two parts: pasword and exploration in the program. This can easily be seen in the first part of the code, each command has its own defined function. . Challenges . Since I created a Jeopardy game there were lots of buttons that I had to create so I had to make sure the names were correct, so I could easily find them, I also had a little trouble while making a question with text entry. .",
+            "url": "https://jameshunter12.github.io/james-fastpage/markdown/java/2022/09/12/quiz-plan.html",
+            "relUrl": "/markdown/java/2022/09/12/quiz-plan.html",
             "date": " • Sep 12, 2022"
         }
         
@@ -24,10 +24,10 @@
   
     
         ,"post2": {
-            "title": "Changing the Remote Theme",
-            "content": ". .",
-            "url": "https://jameshunter12.github.io/james-fastpage/jupyter/2022/09/06/theme-change.html",
-            "relUrl": "/jupyter/2022/09/06/theme-change.html",
+            "title": "Theme Change",
+            "content": "Chaning Remote Theme . My Attempt at Changing the Remote Theme . toc: true | badges: true | comments: true | categories: [jupyter, ] | . . .",
+            "url": "https://jameshunter12.github.io/james-fastpage/2022/09/06/theme-change.html",
+            "relUrl": "/2022/09/06/theme-change.html",
             "date": " • Sep 6, 2022"
         }
         
