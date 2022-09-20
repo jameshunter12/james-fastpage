@@ -4,9 +4,9 @@
         "post0": {
             "title": "Dictionary Quiz",
             "content": "class Question: def __init__(self, prompt, answer): self.prompt = prompt self.answer = answer #These are the questions followed by the possible answers question_prompts = [ &quot;What is the name of the syntax that can pass variables in html? n n&quot;, &quot;What is it called for a command you give your computer? n n&quot;, &quot;Is it important to define your varibles? n n&quot;, &quot;If you do not definne your varibles what will happen when you try and run the code? n n&quot;, ] #These are the answers to the questions above questions = [ Question(question_prompts[0], &quot;liquid&quot;), Question(question_prompts[1], &quot;input&quot;), Question(question_prompts[2], &quot;yes&quot;), Question(question_prompts[3], &quot;syntax error&quot;), ] #This is used to tell you your score def run_quiz(questions): score = 0 for question in questions: answer = input(question.prompt) if answer == question.answer: score += 1 print(&quot;you got&quot;, score, &quot;out of&quot;, len(questions)) run_quiz(questions) . you got 4 out of 4 .",
-            "url": "https://jameshunter12.github.io/james-fastpage/jupter/python/2022/09/18/dictionary-quiz.html",
-            "relUrl": "/jupter/python/2022/09/18/dictionary-quiz.html",
-            "date": " • Sep 18, 2022"
+            "url": "https://jameshunter12.github.io/james-fastpage/jupter/python/2022/09/19/dictionary-quiz.html",
+            "relUrl": "/jupter/python/2022/09/19/dictionary-quiz.html",
+            "date": " • Sep 19, 2022"
         }
         
     
@@ -91,7 +91,7 @@
     
         ,"post8": {
             "title": "James's First Post",
-            "content": "My name is James and I enjoy playing soccer! .",
+            "content": "My name is James and I do not enjoy playing soccer! .",
             "url": "https://jameshunter12.github.io/james-fastpage/markdown/2022/08/22/first-post.html",
             "relUrl": "/markdown/2022/08/22/first-post.html",
             "date": " • Aug 22, 2022"
