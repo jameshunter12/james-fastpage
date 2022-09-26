@@ -22,13 +22,6 @@ layout: notebook
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include nav_frontend.html %}</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="console.log-output">console.log output<a class="anchor-link" href="#console.log-output"> </a></h3><p>Output to console using the classic programming introduction using a "Hello, World!" message.</p>
 <ul>
 <li>The command or function is <mark>console.log()</mark></li>
@@ -521,7 +514,7 @@ object ; { name: &#39;Mr M&#39;,
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div style='display:inline-block;background:black;border: 2px solid grey;box-shadow: 0.8em 0.4em 0.4em grey;'><table><tr><th><mark>Name</mark></th><th><mark>GitHub ID</mark></th><th><mark>Role</mark></th><th><mark>Sport</mark></th></tr><tr><td>Mr M</td><td>jm1021</td><td>Teacher</td><tr><tr><td>James</td><td>jameshunter12</td><td>Student</td><tr><tr><td>Quinn</td><td>gigtieup</td><td>Student</td><tr><tr><td>Aaron</td><td>aaron-rub</td><td>Student</td><tr><tr><td>Yasha</td><td>yashakhoshini</td><td>Student</td><tr></table></div>
+<div style='display:inline-block;background:black;border: 2px solid grey;box-shadow: 0.8em 0.4em 0.4em grey;'><table><tr><th><mark>Name</mark></th><th><mark>GitHub ID</mark></th><th><mark>Role</mark></th><th><mark>Sport</mark></th></tr><tr><td>Mr M</td><td>jm1021</td><td>Teacher</td><td>coding</td><tr><tr><td>James</td><td>jameshunter12</td><td>Student</td><td>soccer</td><tr><tr><td>Quinn</td><td>gigtieup</td><td>Student</td><td>lacrosse</td><tr><tr><td>Aaron</td><td>aaron-rub</td><td>Student</td><td>swim</td><tr><tr><td>Yasha</td><td>yashakhoshini</td><td>Student</td><td>soccer</td><tr></table></div>
 </div>
 
 </div>
