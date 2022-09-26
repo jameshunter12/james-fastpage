@@ -31,4 +31,4 @@ div.appendChild(table);
 
 ```
 
-{% include javascript-table.html %}
+{% include javascript-table.html %} 
