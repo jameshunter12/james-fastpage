@@ -7,7 +7,7 @@ title: Table for JavaScript
 ---
 
 ```
-<div id="javascriptTable">
+<div id="javascript-table">
  
 </div>
  
