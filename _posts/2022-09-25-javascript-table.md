@@ -1,11 +1,4 @@
 ---
-toc: true
-layout: post
-description: Making a javascript table
-categories: [markdown]
-title: Table for JavaScript
----
-
 permalink: /FP/js-tab
 ---
  
