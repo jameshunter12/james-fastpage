@@ -96,51 +96,60 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-</ul><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div id="javascript-table"&gt;
- 
-&lt;/div&gt;
- 
-&lt;script&gt;
- 
-const data = ["yasha","james","quinn","aaron"]
- 
-let table = document.createElement("table");
-let row = document.createElement("tr");
-for(let i=0; i&lt;data.length; i++){
-   let td=document.createElement("td");
-   let node=document.createTextNode(data[i]);
-   td.appendChild(node);
-   row.appendChild(td);
-}
-table.appendChild(row);
-let div = document.getElementById("javascriptTable");
-div.appendChild(table);
- 
-&lt;/script&gt;
+<li class="toc-entry toc-h2"><a href="#permalink-fpjs-tab">permalink: /FP/js-tab</a></li>
+<li class="toc-entry toc-h1"><a href="#table-">Table </a></li>
+</ul><h2 id="permalink-fpjs-tab">
+<a class="anchor" href="#permalink-fpjs-tab" aria-hidden="true"><span class="octicon octicon-link"></span></a>permalink: /FP/js-tab</h2>
 
-</code></pre></div></div>
+<h1>
+<a class="anchor" href="#table-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Table </h1>
 
-<div id="javascriptTable">
- 
-</div>
-
+<table id="mytable">
+    <tr>
+    <th> Member </th>
+    <th> Role </th>
+    </tr>  
+</table>
 <script>
+    let big_dict = {
+        "Quinn":"Scrum Master",
+        "Yasha":"Dev-Op",
+        "Aaron": "Backend Developer",
+        "James" : "Frontend Developer"
+    };
+    var body = document.getElementsByTagName("body")[0];
  
-const data = ["yasha","james","quinn","aaron"]
+    var tbl = document.getElementById("mytable");
+    var tblBody = document.createElement("tbody");
  
-let table = document.createElement("table");
-let row = document.createElement("tr");
-for(let i=0; i<data.length; i++){
-   let td=document.createElement("td");
-   let node=document.createTextNode(data[i]);
-   td.appendChild(node);
-   row.appendChild(td);
-}
-table.appendChild(row);
-let div = document.getElementById("javascriptTable");
-div.appendChild(table);
+    for (var j = 0; j < Object.keys(big_dict).length; j++) {
+        var row = document.createElement("tr");
+       
+       
+        obj = Object.keys(big_dict)[j];
+        obj2 = big_dict[obj];
+        var cell1 = document.createElement("td");
+        var cellText1 = document.createTextNode(obj);
+        var cell2 = document.createElement("td");
+        var cellText2 = document.createTextNode(obj2);
  
-</script>
+        cell1.appendChild(cellText1);
+        row.appendChild(cell1);
+        cell2.appendChild(cellText2);
+        row.appendChild(cell2);
+ 
+ 
+      //row added to end of table body
+      tblBody.appendChild(row);
+    }
+ 
+ 
+    tbl.appendChild(tblBody);
+ 
+    body.appendChild(tbl);
+ 
+    tbl.setAttribute("border", "2");
+  </script>
 
 
   </div><a class="u-url" href="/james-fastpage/markdown/2022/09/25/javascript-table.html" hidden></a>

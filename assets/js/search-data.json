@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Table for JavaScript",
-            "content": "&lt;div id=&quot;javascript-table&quot;&gt; &lt;/div&gt; &lt;script&gt; const data = [&quot;yasha&quot;,&quot;james&quot;,&quot;quinn&quot;,&quot;aaron&quot;] let table = document.createElement(&quot;table&quot;); let row = document.createElement(&quot;tr&quot;); for(let i=0; i&lt;data.length; i++){ let td=document.createElement(&quot;td&quot;); let node=document.createTextNode(data[i]); td.appendChild(node); row.appendChild(td); } table.appendChild(row); let div = document.getElementById(&quot;javascriptTable&quot;); div.appendChild(table); &lt;/script&gt; .",
+            "content": "permalink: /FP/js-tab . Table . Member Role .",
             "url": "https://jameshunter12.github.io/james-fastpage/markdown/2022/09/25/javascript-table.html",
             "relUrl": "/markdown/2022/09/25/javascript-table.html",
             "date": " • Sep 25, 2022"
