@@ -1,13 +1,6 @@
 ---
-toc: true
-layout: post
-description: Below is my quiz plan (Code.org)
-categories: [markdown, java]
-title: Quiz Plan
 permalink: /FP/js-tab
 ---
- 
- 
 <h1>Table </h1>
  
 <table id = "mytable">
