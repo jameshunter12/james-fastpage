@@ -7,9 +7,6 @@ title: Quiz Plan
 permalink: /FP/js-tab
 ---
  
- 
-<h1>Table </h1>
- 
 <table id = "mytable">
     <tr>
     <th> Member </th>
