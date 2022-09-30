@@ -1,6 +1,11 @@
 ---
-permalink: /FP/js-tab
+toc: true
+layout: post
+description: Important links relating to JavaScript
+categories: [markdown, java]
+title: Java Script Table
 ---
+
 <h1>Table </h1>
  
 <table id = "mytable">
