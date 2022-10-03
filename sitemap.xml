@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://jameshunter12.github.io/james-fastpage/2022/08/22/collegeboard.html</loc>
+<lastmod>2022-08-22T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>https://jameshunter12.github.io/james-fastpage/jupyter/python/2022/08/22/first-notebook.html</loc>
 <lastmod>2022-08-22T00:00:00-05:00</lastmod>
 </url>
@@ -25,6 +29,10 @@
 <lastmod>2022-08-29T00:00:00-05:00</lastmod>
 </url>
 <url>
+<loc>https://jameshunter12.github.io/james-fastpage/2022/09/04/collegeboard.html</loc>
+<lastmod>2022-09-04T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>https://jameshunter12.github.io/james-fastpage/jupter/python/2022/09/06/dictionary-quiz.html</loc>
 <lastmod>2022-09-06T00:00:00-05:00</lastmod>
 </url>
@@ -43,6 +51,22 @@
 <url>
 <loc>https://jameshunter12.github.io/james-fastpage/markdown/java/2022/09/25/javascript-table.html</loc>
 <lastmod>2022-09-25T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://jameshunter12.github.io/james-fastpage/collegeboard/error</loc>
+<lastmod>2022-10-03T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://jameshunter12.github.io/james-fastpage/2022/10/03/PBL-python_rapidapi.html</loc>
+<lastmod>2022-10-03T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://jameshunter12.github.io/james-fastpage/mardown/2022/10/03/collegeboard.html</loc>
+<lastmod>2022-10-03T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://jameshunter12.github.io/james-fastpage/mardown/2022/10/04/collegeboard.html</loc>
+<lastmod>2022-10-04T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://jameshunter12.github.io/james-fastpage/about/</loc>
@@ -64,5 +88,8 @@
 </url>
 <url>
 <loc>https://jameshunter12.github.io/james-fastpage/Vocabulary/</loc>
+</url>
+<url>
+<loc>https://jameshunter12.github.io/james-fastpage/page2/</loc>
 </url>
 </urlset>
