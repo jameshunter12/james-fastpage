@@ -379,7 +379,9 @@ layout: notebook
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">menu</span> <span class="o">=</span>  <span class="p">{</span><span class="s2">&quot;burger&quot;</span><span class="p">:</span> <span class="mf">3.99</span><span class="p">,</span>
          <span class="s2">&quot;fries&quot;</span><span class="p">:</span> <span class="mf">1.99</span><span class="p">,</span>
          <span class="s2">&quot;drink&quot;</span><span class="p">:</span> <span class="mf">0.99</span><span class="p">,</span>
-         <span class="s2">&quot;burger and fries&quot;</span><span class="p">:</span> <span class="mf">5.98</span><span class="p">}</span>
+         <span class="s2">&quot;burger and fries&quot;</span><span class="p">:</span> <span class="mf">5.98</span><span class="p">,</span>
+         <span class="s2">&quot;burger and drink&quot;</span><span class="p">:</span> <span class="mf">4.98</span><span class="p">,</span>
+         <span class="s2">&quot;drink and fries&quot;</span><span class="p">:</span> <span class="mf">2.98</span><span class="p">}</span>
 <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="c1">#shows the user the menu and prompts them to select an item</span>
@@ -389,17 +391,13 @@ layout: notebook
 
 <span class="c1">#ideally the code should prompt the user multiple times</span>
 <span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please select an item from the menu&quot;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;fries&quot;</span><span class="p">:</span>
-    <span class="n">total</span> <span class="o">+=</span> <span class="mf">1.99</span>
-<span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;burger&quot;</span><span class="p">:</span>
-    <span class="n">total</span> <span class="o">+=</span> <span class="mf">3.99</span>
-<span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;drink&quot;</span><span class="p">:</span>
-    <span class="n">total</span> <span class="o">+=</span> <span class="mf">0.99</span>
-<span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;burger and fries&quot;</span><span class="p">:</span>
-    <span class="n">total</span> <span class="o">+=</span> <span class="mf">5.98</span>
 
 <span class="c1">#code should add the price of the menu items selected by the user </span>
-<span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total =&quot;</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">])</span>
+
+<span class="c1"># print(&quot;Total=&quot; + &quot;  $&quot; + str(v))</span>
 </pre></div>
 
     </div>
@@ -417,7 +415,10 @@ burger  $3.99
 fries  $1.99
 drink  $0.99
 burger and fries  $5.98
-0
+burger and drink  $4.98
+drink and fries  $2.98
+Total =
+3.99
 </pre>
 </div>
 </div>
