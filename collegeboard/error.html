@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -473,17 +473,26 @@ window.onload = wrap_img;
 <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="c1">#shows the user the menu and prompts them to select an item</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Menu&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Menu:&quot;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">menu</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="s2">&quot;  $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span> <span class="c1">#why does v have &quot;str&quot; in front of it?</span>
 
 <span class="c1">#ideally the code should prompt the user multiple times</span>
 <span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please select an item from the menu&quot;</span><span class="p">)</span>
 
+
 <span class="c1">#code should add the price of the menu items selected by the user </span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total =&quot;</span><span class="p">)</span> 
-<span class="nb">print</span><span class="p">(</span><span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">menu</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Thank you for ordering &quot;</span>  <span class="o">+</span> <span class="n">item</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your total is&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your order with be ready in 15 minutes&quot;</span><span class="p">)</span>
+
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That is not on the menu&quot;</span><span class="p">)</span>
 
 <span class="c1"># print(&quot;Total=&quot; + &quot;  $&quot; + str(v))</span>
 </pre></div>
@@ -498,16 +507,33 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Menu
+<pre>Menu:
 burger  $3.99
 fries  $1.99
 drink  $0.99
 burger and fries  $5.98
 burger and drink  $4.98
 drink and fries  $2.98
-Total =
-3.99
+---
+Thank you for ordering fries
 </pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In [14], line 24</span>
+<span class="ansi-green-intense-fg ansi-bold">     22</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> item <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> menu<span style="color: rgb(98,98,98)">.</span>keys():
+<span class="ansi-green-intense-fg ansi-bold">     23</span>     <span style="color: rgb(0,135,0)">print</span>(<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">Thank you for ordering </span><span style="color: rgb(175,0,0)">&#34;</span>  <span style="color: rgb(98,98,98)">+</span> item)
+<span class="ansi-green-fg">---&gt; 24</span>     <span style="color: rgb(0,135,0)">print</span>((<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">Your total is</span><span style="color: rgb(175,0,0)">&#34;</span>) <span style="color: rgb(98,98,98)">+</span> menu[item])
+<span class="ansi-green-intense-fg ansi-bold">     25</span>     <span style="color: rgb(0,135,0)">print</span>(menu[item])
+<span class="ansi-green-intense-fg ansi-bold">     26</span>     <span style="color: rgb(0,135,0)">print</span>(<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">Your order with be ready in 15 minutes</span><span style="color: rgb(175,0,0)">&#34;</span>)
+
+<span class="ansi-red-fg">TypeError</span>: can only concatenate str (not &#34;float&#34;) to str</pre>
 </div>
 </div>
 
