@@ -25,6 +25,7 @@ layout: notebook
 <p>I need to improve in most of the aspects. I think I can start with improving my vocab because if I understand the vocab then it will make everything a lot easier. If I know the vocab then I can easy tell what the question is asking</p>
 <p>I need to go through each lesson to review my understanding because right now I am confused on a lot of topics</p>
 <p>I haven't taken much notes as of now because I forgot to, so once I start taking notes on chapter 1 I think i will greatly imporve my understanding and clear up any confusion</p>
+<p>I also realized that there are course resources that I can go through to improve my knowledge and specific resources that I can read if I have confusion on a certain topic.</p>
 
 </div>
 </div>
