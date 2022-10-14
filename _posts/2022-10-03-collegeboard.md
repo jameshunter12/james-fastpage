@@ -26,6 +26,7 @@ layout: notebook
 <p>I need to go through each lesson to review my understanding because right now I am confused on a lot of topics</p>
 <p>I haven't taken much notes as of now because I forgot to, so once I start taking notes on chapter 1 I think i will greatly imporve my understanding and clear up any confusion</p>
 <p>I also realized that there are course resources that I can go through to improve my knowledge and specific resources that I can read if I have confusion on a certain topic.</p>
+<p><img src="https://lh3.googleusercontent.com/P4Uw-UbxO9eAhOPUP_DSGh2Un8fSLC616z-zVJTd__P_D7kQjszaun5zFChWoEgy4_Tb5Goi0LECsHqdrXolERTbY976-F_ijbWXTzIfpFznB7kkyW1I3H84dLqOE0OtvsyJWFOQ9n3VoLwcO5pSZrUw7NJrwhuK6Df6d2y8LPD9lUhkcYj_TPcV3mScSQsy2PU76Dl1ZvUC5RdvQlkvBrL9VJNjpe5iueL_xWpNYWw4pJRLkqHFfN4bPe500h4t81OhQIiR3pggMRDHdUE0wp52XcT2ItgkBs6W96FKy-xGkae_FnvhiiPiNpsx2osH6vT0Sb1ZnFln_CW1YU1ZrRyXkdB2cD-Rq73nnEnviCSAZqGuC8GMcNtrlEaxmz9bdQrJ-sZoM-N3uVyOU80aTs37sxn-Ksq26bSWXV8vk0qaaAH98F5aIo4HjMmNFG-APha4AmQt7D58v387HMSdCT_jYzdFWfpK0Avok4akgfLPOQ7Ff9iWczEzNIw_3Wsa5wviVTuj6R_MS-R6FGdMjq7M6TPXIKtqm29FoqBfkxOkEWrbdvPGA9Vcmd5yYCBohLsv8Hs3zbMsRUXbuUyjKzPe5Y7AZRqfUTwIue8_b1yC4QVh2hVS4EDmcpetfL4P1KSC07aTinww6VZWCvz7jXwZeczsM0OdoBEEmB4VY2XOIsDK4Wg253IpsBpwc_8eUJ5JZA58V7397kCYDAFgkoUKAvl5beb9ALy5ChJV1_urwHuU0wW3NyQ6sdIfKGVmINQiDz2P7-p694XT79AyCyl-w_Suk3gwa5Kqdkv4KpOsUc8JgojeRvF42th6zAB7UY2_dbs-C2stX_Q0vMDpIeeps6D1YNKrYfkaetIVVctdCuaekzbE2YwqpDPIjibZiEn4h23wroaXx2_6bdUVeFIdh3EsN9Pcy4sceA=w2628-h1642-no?authuser=0" alt=""></p>
 
 </div>
 </div>
