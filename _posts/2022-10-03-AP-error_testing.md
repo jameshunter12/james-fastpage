@@ -398,9 +398,8 @@ layout: notebook
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">menu</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;your total will be: </span><span class="si">{</span><span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Thank you for ordering &quot;</span>  <span class="o">+</span> <span class="n">item</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your total is&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">])</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your order with be ready in 15 minutes&quot;</span><span class="p">)</span>
 
 <span class="k">else</span><span class="p">:</span>
@@ -426,6 +425,10 @@ drink  $0.99
 burger and fries  $5.98
 burger and drink  $4.98
 drink and fries  $2.98
+---
+your total will be: 1.99
+Thank you for ordering fries
+Your order with be ready in 15 minutes
 </pre>
 </div>
 </div>
