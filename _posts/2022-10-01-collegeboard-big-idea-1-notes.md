@@ -5,7 +5,7 @@ title: College Board Chapter 1 Notes
 toc: true 
 badges: true
 comments: true
-categories: [mardown]
+categories: [markdown]
 nb_path: _notebooks/2022-10-01-collegeboard-big-idea-1-notes.ipynb
 layout: notebook
 ---
@@ -19,6 +19,32 @@ layout: notebook
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+  <tbody>
+   <tr>
+    <td>
+     <img src="/APCSP//images/logo.png" height="60" title="Data" alt="">
+    </td>
+    <td>
+     <a href="/APCSP/api/overview">Overview</a>
+    </td>
+    <td>
+     <a href="/APCSP/data/covid">Covid19 RapidAPI</a>
+    </td>
+    <td>
+     <a href="/APCSP/data/jokes">Jokes API</a>
+    </td>
+    <td>
+    <a href="/APCSP/data/database">Users Database</a>
+    </td>
+  </tr>
+ </tbody>
+</table>
+</div>
+</div>
+</div>
 </div>
  
 

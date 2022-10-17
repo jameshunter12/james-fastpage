@@ -5,7 +5,7 @@ title: College Board
 toc: true 
 badges: true
 comments: true
-categories: [mardown]
+categories: [markdown]
 nb_path: _notebooks/2022-10-03-collegeboard.ipynb
 layout: notebook
 ---
