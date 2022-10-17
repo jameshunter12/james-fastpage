@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      7 min read
     
 </span></p>
 
@@ -386,6 +386,79 @@ tests_per_1m_population 2,990,303
 5.222843346525186 HT Huobi Token
 74.84882436943164 AAVE Aave
 </pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://americanfootballapi.p.rapidapi.com/api/american-football/search/brady"</span>
+
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"sort"</span><span class="p">:</span><span class="s2">"new"</span><span class="p">}</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"6fa44ed3a2msh483515e3beca32dp153a87jsn04ee72a909e0"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"americanfootballapi.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+<span class="n">json</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'results'</span><span class="p">)</span>  <span class="c1"># convert response to python json object</span>
+ 
+<span class="c1"># Observe data from an API.  This is how data transports over the internet in a "JSON" text form</span>
+<span class="c1"># - The JSON "text" is formed in dictionary {} and list [] divisions</span>
+<span class="c1"># - To read the result, Data Scientist of  Developer converts JSON into human readable form</span>
+<span class="c1"># - Review the first line, look for the keys --  "status" and "data"</span>
+
+<span class="k">for</span> <span class="n">post</span> <span class="ow">in</span> <span class="n">json</span><span class="p">:</span> <span class="c1"># countries in a list</span>
+	<span class="k">for</span> <span class="n">posts</span> <span class="ow">in</span> <span class="n">post</span><span class="p">[</span><span class="s2">"entity"</span><span class="p">]:</span>
+		<span class="k">if</span> <span class="n">posts</span><span class="p">[</span><span class="s2">"country"</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"name"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"USA"</span><span class="p">:</span>
+			<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">post</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+				<span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{"results":[{"entity":{"category":null,"country":{"alpha2":"US","name":"USA"},"disabled":null,"displayInverseHomeAwayTeams":null,"firstName":"","gender":null,"id":853680,"lastName":"","name":"Tom Brady","nameCode":null,"national":null,"position":"QB","ranking":null,"shortName":"T. Brady","slug":"brady-tom","sport":null,"team":{"country":{"alpha2":"US","name":"USA"},"disabled":false,"gender":"M","id":4388,"name":"Tampa Bay Buccaneers","nameCode":"TB","national":false,"ranking":null,"shortName":"Tampa Bay Buccaneers","slug":"tampa-bay-buccaneers","sport":{"id":63,"name":"American football","slug":"american-football"},"teamColors":{"primary":"#d50a0a","secondary":"#34302b","text":"#34302b"},"type":0,"userCount":14094},"teamColors":null,"type":null,"userCount":10398},"score":1275870,"type":"player"},{"entity":{"category":null,"country":{"alpha2":null,"name":null},"disabled":null,"displayInverseHomeAwayTeams":null,"firstName":"","gender":null,"id":1132339,"lastName":"","name":"Brady Christensen","nameCode":null,"national":null,"position":"OT","ranking":null,"shortName":"B. Christensen","slug":"christensen-brady","sport":null,"team":{"country":{"alpha2":"US","name":"USA"},"disabled":null,"gender":"M","id":4415,"name":"Carolina Panthers","nameCode":"CAR","national":false,"ranking":null,"shortName":"Carolina Panthers","slug":"carolina-panthers","sport":{"id":63,"name":"American football","slug":"american-football"},"teamColors":{"primary":"#3a84c5","secondary":"#07141e","text":"#07141e"},"type":0,"userCount":2488},"teamColors":null,"type":null,"userCount":2},"score":206,"type":"player"},{"entity":{"category":null,"country":{"alpha2":"US","name":"USA"},"disabled":null,"displayInverseHomeAwayTeams":null,"firstName":null,"gender":null,"id":887887,"lastName":null,"name":"Brady Sheldon","nameCode":null,"national":null,"position":"LB","ranking":null,"shortName":"B. Sheldon","slug":"sheldon-brady","sport":null,"team":{"country":{"alpha2":null,"name":null},"disabled":true,"gender":null,"id":273134,"name":"No team","nameCode":"NTE","national":false,"ranking":null,"shortName":"No team","slug":"no-team","sport":{"id":63,"name":"American football","slug":"american-football"},"teamColors":{"primary":"#52b030","secondary":"#52b030","text":"#ffffff"},"type":0,"userCount":0},"teamColors":null,"type":null,"userCount":0},"score":0,"type":"player"},{"entity":{"category":null,"country":{"alpha2":null,"name":null},"disabled":null,"displayInverseHomeAwayTeams":null,"firstName":null,"gender":null,"id":984311,"lastName":null,"name":"Tyre Brady","nameCode":null,"national":null,"position":"WR","ranking":null,"shortName":"T. Brady","slug":"brady-tyre","sport":null,"team":{"country":{"alpha2":null,"name":null},"disabled":true,"gender":null,"id":273134,"name":"No team","nameCode":"NTE","national":false,"ranking":null,"shortName":"No team","slug":"no-team","sport":{"id":63,"name":"American football","slug":"american-football"},"teamColors":{"primary":"#52b030","secondary":"#52b030","text":"#ffffff"},"type":0,"userCount":0},"teamColors":null,"type":null,"userCount":0},"score":0,"type":"player"}]}
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/jameshunter/vscode/james-fastpage/_notebooks/2022-10-06-PBL-python_rapidapi.ipynb Cell 7</span> in <span class="ansi-cyan-fg">&lt;cell line: 22&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/jameshunter/vscode/james-fastpage/_notebooks/2022-10-06-PBL-python_rapidapi.ipynb#X12sZmlsZQ%3D%3D?line=21'&gt;22&lt;/a&gt;</span> for post in json: # countries in a list
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/jameshunter/vscode/james-fastpage/_notebooks/2022-10-06-PBL-python_rapidapi.ipynb#X12sZmlsZQ%3D%3D?line=22'&gt;23&lt;/a&gt;</span> 	for posts in post["entity"]:
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/jameshunter/vscode/james-fastpage/_notebooks/2022-10-06-PBL-python_rapidapi.ipynb#X12sZmlsZQ%3D%3D?line=23'&gt;24&lt;/a&gt;</span> 		if posts["country"].get("name") == "USA":
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/jameshunter/vscode/james-fastpage/_notebooks/2022-10-06-PBL-python_rapidapi.ipynb#X12sZmlsZQ%3D%3D?line=24'&gt;25&lt;/a&gt;</span> 			for key, value in post.items():
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/jameshunter/vscode/james-fastpage/_notebooks/2022-10-06-PBL-python_rapidapi.ipynb#X12sZmlsZQ%3D%3D?line=25'&gt;26&lt;/a&gt;</span> 				print(key, value)
+
+<span class="ansi-red-fg">TypeError</span>: string indices must be integers</pre>
 </div>
 </div>
 
