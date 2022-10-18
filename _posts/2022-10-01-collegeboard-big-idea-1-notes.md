@@ -25,10 +25,7 @@ layout: notebook
   <tbody>
    <tr>
     <td>
-     <img src="/APCSP//images/logo.png" height="60" title="Data" alt="">
-    </td>
-    <td>
-     <a href="/APCSP/api/overview">1.1</a>
+     <a href="/APCSP/api/overview">1.1</a>  
     </td>
     <td>
      <a href="/APCSP/data/covid">1.2</a>
