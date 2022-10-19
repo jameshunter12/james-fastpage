@@ -25,10 +25,10 @@ layout: notebook
   <tbody>
    <tr>
     <td>
-     <a href="/APCSP/api/overview">1.1</a>  
+     <a href="/APCSP/api/overview">1.1 Collaboration</a>  
     </td>
     <td>
-     <a href="/APCSP/data/covid">1.2</a>
+     <a href="/APCSP/data/covid">1.2 Program Function and Purpose</a>
     </td>
     <td>
      <a href="/APCSP/data/jokes">1.3</a>
@@ -39,6 +39,55 @@ layout: notebook
   </tr>
  </tbody>
 </table>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.1-Collaboration-Notes">1.1 Collaboration Notes<a class="anchor-link" href="#1.1-Collaboration-Notes"> </a></h2><ul>
+<li>Effective collaboration produces a computing innovation that reflects the diversity of talents and perspectives of those who designed it</li>
+<li>A computing inoovation can be a program and it can be physical or nonphysical</li>
+<li>Collaboration that includes diverse perspectives helps to aviod bias</li>
+<li>Interpersonal skills learned thriugh collaboration</li>
+<li><ul>
+<li>Communication</li>
+</ul>
+</li>
+<li><ul>
+<li>Consensus Building</li>
+</ul>
+</li>
+<li><ul>
+<li>Conflict Resolution</li>
+</ul>
+</li>
+<li><ul>
+<li>Negotiation</li>
+</ul>
+</li>
+<li><p>Ways to collaborate in APCSP:</p>
+</li>
+<li><ul>
+<li>Pair Programming- Have one person work while the other person guides them</li>
+</ul>
+</li>
+<li><ul>
+<li>Think-Pair-Share- Think about a problem and share with a partner</li>
+</ul>
+</li>
+<li><ul>
+<li>Leaving Comments- Allows you to communicate with yourself and others</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.2-Program-Function-and-Purpose-Notes">1.2 Program Function and Purpose Notes<a class="anchor-link" href="#1.2-Program-Function-and-Purpose-Notes"> </a></h2><p>-</p>
+
 </div>
 </div>
 </div>
