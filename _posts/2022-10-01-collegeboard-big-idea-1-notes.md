@@ -86,7 +86,24 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.2-Program-Function-and-Purpose-Notes">1.2 Program Function and Purpose Notes<a class="anchor-link" href="#1.2-Program-Function-and-Purpose-Notes"> </a></h2><p>-</p>
+<h2 id="1.2-Program-Function-and-Purpose-Notes">1.2 Program Function and Purpose Notes<a class="anchor-link" href="#1.2-Program-Function-and-Purpose-Notes"> </a></h2><ul>
+<li>The purpose of computing innovation is to solve problems or to puruse interests through creative expression</li>
+<li>An understanding of the purpose of a computing innovation provides developers with an imporved ability to develop that computing innovation</li>
+<li>Categories of Innovations:</li>
+<li><ul>
+<li>Applications (things you can download)</li>
+</ul>
+</li>
+<li><ul>
+<li>Physical Devices (devices you can use)</li>
+</ul>
+</li>
+<li><ul>
+<li>Systems (things you can do online like E-mail)</li>
+</ul>
+</li>
+<li>Describing the purpose of a computing is important (essential questions)</li>
+</ul>
 
 </div>
 </div>
