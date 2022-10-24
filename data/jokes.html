@@ -76,9 +76,10 @@ window.onload = wrap_img;
 <table>
   <thead>
   <tr>
-    <th>Joke</th>
-    <th>HaHa</th>
-    <th>Boohoo</th>
+    <th>joke</th>
+    <th>image</th>
+    <th>good</th>
+    <th>bad</th>
   </tr>
   </thead>
   <tbody id="result">
@@ -128,8 +129,8 @@ window.onload = wrap_img;
             const tr = document.createElement("tr");
             // td for each column
             const joke = document.createElement("td");
-            const haha = document.createElement("td");
-            const boohoo = document.createElement("td");
+            const good = document.createElement("td");
+            const bad = document.createElement("td");
             // data is specific to the API
             joke.innerHTML = row.joke;
             haha.innerHTML = row.haha; 
