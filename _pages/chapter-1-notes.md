@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Chapter 1 Notes
-permalink: 
+permalink: /Chapter 1 Notes/
 type: pbl
 ----
 
