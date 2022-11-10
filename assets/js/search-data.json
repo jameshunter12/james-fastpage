@@ -36,7 +36,7 @@
     
         ,"post3": {
             "title": "Fetch of Backend Jokes",
-            "content": "Joke HaHa Boohoo .",
+            "content": "Joke HaHa Boohoo . &lt;/span&gt; &lt;/script&gt; .",
             "url": "https://jameshunter12.github.io/james-fastpage/data/jokes",
             "relUrl": "/data/jokes",
             "date": " • Oct 20, 2022"

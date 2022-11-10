@@ -214,9 +214,19 @@ window.onload = wrap_img;
     tr.appendChild(td);
     resultContainer.appendChild(tr);
   }
+  
+function timeClock()
+{
+    setTimeout("timeClock()", 1000);        
+    now = new Date();
+    alert(now);
+    f_date = now.getDate()+" "+strMonth(now.getMonth())+" "+now.getFullYear()+" / "+timeFormat(now.getHours(), now.getMinutes());
+    return f_date;
+}
 
-</script>
-
+<span class="foo"><script type="text/javascript">document.write(timeClock());</script>
+<p>&lt;/span&gt;
+&lt;/script&gt;</p>
 
       </div>
     </main><footer class="site-footer h-card">
