@@ -215,17 +215,6 @@ window.onload = wrap_img;
     resultContainer.appendChild(tr);
   }
 
-function timeClock()
-{
-    setTimeout("timeClock()", 1000);        
-    now = new Date();
-    alert(now);
-    f_date = now.getDate()+" "+strMonth(now.getMonth())+" "+now.getFullYear()+" / "+timeFormat(now.getHours(), now.getMinutes());
-    return f_date;
-}
-
-<span class="foo"><script type="text/javascript">document.write(timeClock());
-
 </script>
 
 
