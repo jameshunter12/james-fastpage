@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      6 min read
     
 </span></p>
 
@@ -194,26 +194,12 @@ window.onload = wrap_img;
 
 <span class="n">jokes_data</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">joke_list</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s2">"If you give someone a program... you will frustrate them for a day; if you teach them how to program... you will "</span>
-    <span class="s2">"frustrate them for a lifetime."</span><span class="p">,</span>
-    <span class="s2">"Q: Why did I divide sin by tan? A: Just cos."</span><span class="p">,</span>
-    <span class="s2">"UNIX is basically a simple operating system... but you have to be a genius to understand the simplicity."</span><span class="p">,</span>
-    <span class="s2">"Enter any 11-digit prime number to continue."</span><span class="p">,</span>
-    <span class="s2">"If at first you don't succeed; call it version 1.0."</span><span class="p">,</span>
-    <span class="s2">"Java programmers are some of the most materialistic people I know, very object-oriented"</span><span class="p">,</span>
-    <span class="s2">"The oldest computer can be traced back to Adam and Eve. It was an apple but with extremely limited memory. Just "</span>
-    <span class="s2">"1 byte. And then everything crashed."</span><span class="p">,</span>
-    <span class="s2">"Q: Why did Wi-Fi and the computer get married? A: Because they had a connection"</span><span class="p">,</span>
-    <span class="s2">"Bill Gates teaches a kindergarten class to count to ten. 1, 2, 3, 3.1, 95, 98, ME, 2000, XP, Vista, 7, 8, 10."</span><span class="p">,</span>
-    <span class="s2">"Q: What’s a aliens favorite computer key? A: the space bar!"</span><span class="p">,</span>
-    <span class="s2">"There are 10 types of people in the world: those who understand binary, and those who don’t."</span><span class="p">,</span>
-    <span class="s2">"If it wasn't for C, we’d all be programming in BASI and OBOL."</span><span class="p">,</span>
-    <span class="s2">"Computers make very fast, very accurate mistakes."</span><span class="p">,</span>
-    <span class="s2">"Q: Why is it that programmers always confuse Halloween with Christmas? A: Because 31 OCT = 25 DEC."</span><span class="p">,</span>
-    <span class="s2">"Q: How many programmers does it take to change a light bulb? A: None. It’s a hardware problem."</span><span class="p">,</span>
-    <span class="s2">"The programmer got stuck in the shower because the instructions on the shampoo bottle said: Lather, Rinse, Repeat."</span><span class="p">,</span>
-    <span class="s2">"Q: What is the biggest lie in the entire universe? A: I have read and agree to the Terms and Conditions."</span><span class="p">,</span>
-    <span class="s1">'An SQL statement walks into a bar and sees two tables. It approaches, and asks may I join you?'</span>
+    <span class="s2">"What do you think of this product?"</span><span class="p">,</span>
+    <span class="s2">"What do you think of this product?"</span><span class="p">,</span>
+    <span class="s2">"What do you think of this product?"</span><span class="p">,</span>
+    <span class="s2">"What do you think of this product?"</span><span class="p">,</span>
+    <span class="s2">"What do you think of this product?"</span><span class="p">,</span>
+    <span class="s2">"What do you think of this product?"</span>
 <span class="p">]</span>
 
 <span class="c1"># Initialize jokes</span>
@@ -221,7 +207,7 @@ window.onload = wrap_img;
     <span class="c1"># setup jokes into a dictionary with id, joke, haha, boohoo</span>
     <span class="n">item_id</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">joke_list</span><span class="p">:</span>
-        <span class="n">jokes_data</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s2">"id"</span><span class="p">:</span> <span class="n">item_id</span><span class="p">,</span> <span class="s2">"joke"</span><span class="p">:</span> <span class="n">item</span><span class="p">,</span> <span class="s2">"haha"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"boohoo"</span><span class="p">:</span> <span class="mi">0</span><span class="p">})</span>
+        <span class="n">jokes_data</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s2">"id"</span><span class="p">:</span> <span class="n">item_id</span><span class="p">,</span> <span class="s2">"joke"</span><span class="p">:</span> <span class="n">item</span><span class="p">,</span> <span class="s2">"good"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"bad"</span><span class="p">:</span> <span class="mi">0</span><span class="p">})</span>
         <span class="n">item_id</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="c1"># prime some haha responses</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">200</span><span class="p">):</span>
