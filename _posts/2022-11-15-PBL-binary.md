@@ -149,7 +149,7 @@ search_exclude: true
 			bitFlip.id = `bit-${bitId}`;
 			bitFlip.classList.add("bitFlip");
 			bitValue.innerHTML = "0";
-			flipBtn.innerHTML = "Flip";
+			flipBtn.innerHTML = "Switch";
 
 			flipBtn.addEventListener("click", () => {
 				const currentBit = Number.parseInt(bitValue.innerHTML);
@@ -193,7 +193,7 @@ search_exclude: true
 
 		#error,
 		#baseError {
-			color: red;
+			color: blue;
 		}
 
 		h1 {
