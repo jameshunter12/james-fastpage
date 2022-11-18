@@ -217,7 +217,7 @@ search_exclude: true
 		button {
 			outline: none;
 			border: none;
-			background-color: #ff5e5e !important;
+			background-color: #0000FF !important;
 			color: white !important;
 			border-radius: 5px;
 		}
