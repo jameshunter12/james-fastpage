@@ -22,11 +22,6 @@ search_exclude: true
 	<p>Hex: <span id="colorHex"></span></p>
 	<div id="colorBox"></div>
 
-	<h1>Hack #3</h1>
-	<p id="baseError"></p>
-	<p>Enter arbitrary base (2-36): <input id="base" /></p>
-	<p>Base-<span id="baseValue">N</span> format: <span id="baseN"></span></p>
-
 	<script>
 		const BITS = 8;
 		let isFocused = false;
