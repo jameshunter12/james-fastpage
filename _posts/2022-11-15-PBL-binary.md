@@ -193,7 +193,7 @@ search_exclude: true
 
 		#error,
 		#baseError {
-			color: blue;
+			color: red;
 		}
 
 		h1 {
