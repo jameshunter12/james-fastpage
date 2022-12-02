@@ -1,3 +1,11 @@
+---
+toc: true
+layout: post
+description: Grades on first week
+categories: [markdown, java]
+title: Grade for First Week
+---
+
 <html>
 <style>
     table, th, td { 
