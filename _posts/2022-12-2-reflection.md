@@ -21,7 +21,7 @@ title: Grade for First Week
                 <th>Group 5-7</th>
             </tr>
             <tr>
-                <td>1.1</td>
+                <td>1</td>
                 <td>1</td>
                 <td>Not In</td>
             </tr>
