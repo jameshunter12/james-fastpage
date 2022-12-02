@@ -12,5 +12,10 @@
                 <th>Group 3-4</th>
                 <th>Group 5-7</th>
             </tr>
+            <tr>
+                <td>1.1</td>
+                <td>1</td>
+                <td>N/A</td>
+            </tr>
         </table>
     </div>
