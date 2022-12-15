@@ -6,6 +6,10 @@ categories: [markdown, java]
 title: Grades for every lesson
 ---
 
+Links For Work:
+- [3.9-3.11](https://jameshunter12.github.io/james-fastpage/markdown/2022/12/08/blog-Sections-9-10.html)
+- [3.14-3.15](https://jameshunter12.github.io/james-fastpage/2022/12/12/blog-Sections-14-15.ipynb.html)
+
 <html>
 <style>
     table, th, td { 
