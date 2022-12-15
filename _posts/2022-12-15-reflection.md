@@ -1,9 +1,9 @@
 ---
 toc: true
 layout: post
-description: Grades for All Lessons
+description: Grades for every lesson
 categories: [markdown, java]
-title: Grades for every lesson
+title: Grades for All Lessons
 ---
 
 Links For Work:
