@@ -31,11 +31,11 @@ title: Grade for First Week
                 <td>1</td>
                 <td>0.9</td>
                 <td>0.8</td>
-                <td>0.88</td>
                 <td>0.9</td>
-                <td>1</td>
-                <td>1</td>
+                <td>My Group</td>
                 <td>0.9</td>
+                <td>Not In</td>
+                <td>Not In</td>
             </tr>
         </table>
     </div>
