@@ -11,31 +11,58 @@ title: Grades for every lesson
     table, th, td { 
         border:2px solid white;
     }
-</style>
-    <div>My grades</div>
-    <div>
-        <table>
-            <tr>
-                <th>Group 1-2</th>
-                <th>Group 3-4</th>
-                <th>Group 5-7</th>
-                <th>Group 8-10</th>
-                <th>Group 9-11</th>
-                <th>Group 12-13</th>
-                <th>Group 14-15</th>
-                <th>Group 16</th>
-                <th>Group 17-18</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>0.9</td>
-                <td>0.8</td>
-                <td>0.9</td>
-                <td>My Group</td>
-                <td>0.9</td>
-                <td>Not In</td>
-                <td>Not In</td>
-            </tr>
-        </table>
-    </div>
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+      table, th, td {
+         border: 1px solid green;
+      }
+   </style>
+</head>
+<body>
+   <table>
+      <tr>
+         <th>Lesson</th>
+         <th>Grades</th>
+      </tr>
+      <tr>
+         <td>3.1-3.2</td>
+         <td>1</td>
+      </tr>
+      <tr>
+         <td>3.3-3.4</td>
+         <td>1</td>
+      </tr>
+      <tr>
+         <td>3.5-3.7</td>
+         <td>0.9</td>
+      <tr>
+      </tr>
+         <td>3.8-3.10</td>
+         <td>0.8</td>
+      </tr>
+      <tr>
+         <td>3.9-3.11</td>
+         <td>0.9</td>
+      </tr>
+      <tr>
+         <td>3.12-3.13</td>
+         <td>My Group</td>
+      </tr>
+      <tr>
+         <td>3.14-3.15</td>
+         <td>0.9</td>
+      </tr>
+      <tr>
+         <td>3.16</td>
+         <td>Not In</td>
+      </tr>
+      <tr>
+         <td>3.17-3.18</td>
+         <td>Not In</td>
+      </tr>
+      </tr>
+   </table>
+</body>
+</html>
