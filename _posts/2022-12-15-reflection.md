@@ -1,9 +1,9 @@
 ---
 toc: true
 layout: post
-description: Grades on first week
+description: Grades for All Lessons
 categories: [markdown, java]
-title: Grade for First Week
+title: Grades for every lesson
 ---
 
 <html>
