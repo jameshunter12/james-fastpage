@@ -37,11 +37,11 @@ Links For Work:
       </tr>
       <tr>
          <td>3.1-3.2</td>
-         <td>1</td>
+         <td>1.0</td>
       </tr>
       <tr>
          <td>3.3-3.4</td>
-         <td>1</td>
+         <td>1.0</td>
       </tr>
       <tr>
          <td>3.5-3.7</td>
@@ -65,11 +65,11 @@ Links For Work:
       </tr>
       <tr>
          <td>3.16</td>
-         <td>Not In</td>
+         <td>0.95</td>
       </tr>
       <tr>
          <td>3.17-3.18</td>
-         <td>Not In</td>
+         <td>1.0</td>
       </tr>
       </tr>
    </table>
