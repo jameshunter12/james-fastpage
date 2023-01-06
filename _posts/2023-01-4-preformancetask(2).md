@@ -46,15 +46,15 @@ title: Preformance Task Blog 1
       <tr>
       </tr>
          <td>Procedural Abstraction</td>
-         <td>0</td>
          <td>1</td>
-         <td>The only reason I felt they got a 0 is they did not include</td>
+         <td>1</td>
+         <td>They deserve a 2 because they include a student created procedure with 2 parameters (current and replacement) and they also createcd a code segment that defined what was being call in the above procedure. They also include the functionality of the procedure in the response by saying, "This procedure takes as inputs identifying numbers for two lists. The first will be copied over to replace the second."  </td>
       </tr>
       <tr>
          <td>Algorithm Implementation</td>
-         <td></td>
-         <td></td>
-         <td></td>
+         <td>1</td>
+         <td>1</td>
+         <td>The student uses sequencing, selection (if statement), and iteration (repeat loop) in their student developed algorithm. Their explanation is good enough to where some one would be able to recreate their code. They state, "The algorithm uses nested if-else statements to identify which list will be copied from, by looking at the first parameter. Inside the if statement matching that parameter, are another set of if statements to determine where the list should be copied over to."  </td>
       </tr>
    </table>
 </body>
