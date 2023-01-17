@@ -1,7 +1,7 @@
 ---
 toc: true
 layout: post
-description: grading the example preformance task
+description: grading the example performance task
 categories: [markdown, java]
 title: Preformance Task Blog 2
 ---
