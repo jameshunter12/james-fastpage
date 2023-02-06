@@ -4,20 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Search | James’ Fastpages</title>
+<title>Near Me Finder | James’ Fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Search" />
+<meta property="og:title" content="Near Me Finder" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Above is my work from APCSP" />
 <meta property="og:description" content="Above is my work from APCSP" />
-<link rel="canonical" href="https://jameshunter12.github.io/james-fastpage/search/" />
-<meta property="og:url" content="https://jameshunter12.github.io/james-fastpage/search/" />
+<link rel="canonical" href="https://jameshunter12.github.io/james-fastpage/mapsapi/" />
+<meta property="og:url" content="https://jameshunter12.github.io/james-fastpage/mapsapi/" />
 <meta property="og:site_name" content="James’ Fastpages" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Search" />
+<meta property="twitter:title" content="Near Me Finder" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Above is my work from APCSP","headline":"Search","url":"https://jameshunter12.github.io/james-fastpage/search/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Above is my work from APCSP","headline":"Near Me Finder","url":"https://jameshunter12.github.io/james-fastpage/mapsapi/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/james-fastpage/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jameshunter12.github.io/james-fastpage/feed.xml" title="James' Fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/james-fastpage/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -69,18 +69,35 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <!-- adapted from https://github.com/pmarsceill/just-the-docs -->
-<script type="text/javascript" src="/james-fastpage/assets/js/search.js"></script>
-<script type="text/javascript" src="/james-fastpage/assets/js/vendor/lunr.min.js"></script>
+        <html>
+  <head>
+    <title>Places Search Box</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-<div class="search">
-    <div class="search-input-wrap">
-    <input type="text" class="js-search-input search-input input-block form-control" tabindex="0" placeholder="Search James' Fastpages" aria-label="Search James' Fastpages" autocomplete="off">
-    </div>
-    <br>
-    <div class="js-search-results search-results-wrap"></div>
-</div>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <input
+      id="pac-input"
+      class="controls"
+      type="text"
+      placeholder="Search Box"
+    />
+    <div id="map"></div>
 
+    <!-- 
+      The `defer` attribute causes the callback to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises
+      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+      -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initAutocomplete&libraries=places&v=weekly"
+      defer
+    ></script>
+  </body>
+</html>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/james-fastpage/"></data>

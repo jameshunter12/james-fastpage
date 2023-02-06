@@ -539,23 +539,10 @@
   
 
   
-  
-
-  
 
   
   
 
-  
-
-  
-
-  
-
-  
-  
-
-  
   
 
   
@@ -568,10 +555,27 @@
   
 
   
+
+  
   
 
   
-      ,"page18": {
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+      ,"page20": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://jameshunter12.github.io/james-fastpage/robots.txt",
