@@ -1,6 +1,6 @@
 ---
 layout: categories
-permalink: /nearmefinder/
+permalink: /map/
 title: Near Me Finder
 search_exclude: true
 ---
