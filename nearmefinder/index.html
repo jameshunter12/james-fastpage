@@ -4,21 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>My Jupyter Notebooks | James’ Fastpages</title>
+<title>Near Me Finder | James’ Fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="My Jupyter Notebooks" />
+<meta property="og:title" content="Near Me Finder" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="My first notebook" />
-<meta property="og:description" content="My first notebook" />
-<link rel="canonical" href="https://jameshunter12.github.io/james-fastpage/jupyter/python/2022/08/22/first-notebook.html" />
-<meta property="og:url" content="https://jameshunter12.github.io/james-fastpage/jupyter/python/2022/08/22/first-notebook.html" />
+<meta name="description" content="Above is my work from APCSP" />
+<meta property="og:description" content="Above is my work from APCSP" />
+<link rel="canonical" href="https://jameshunter12.github.io/james-fastpage/nearmefinder/" />
+<meta property="og:url" content="https://jameshunter12.github.io/james-fastpage/nearmefinder/" />
 <meta property="og:site_name" content="James’ Fastpages" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-08-22T00:00:00-05:00" />
+<meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="My Jupyter Notebooks" />
+<meta property="twitter:title" content="Near Me Finder" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-22T00:00:00-05:00","datePublished":"2022-08-22T00:00:00-05:00","description":"My first notebook","headline":"My Jupyter Notebooks","mainEntityOfPage":{"@type":"WebPage","@id":"https://jameshunter12.github.io/james-fastpage/jupyter/python/2022/08/22/first-notebook.html"},"url":"https://jameshunter12.github.io/james-fastpage/jupyter/python/2022/08/22/first-notebook.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Above is my work from APCSP","headline":"Near Me Finder","url":"https://jameshunter12.github.io/james-fastpage/nearmefinder/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/james-fastpage/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jameshunter12.github.io/james-fastpage/feed.xml" title="James' Fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/james-fastpage/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -70,118 +69,109 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="home">
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">My Jupyter Notebooks</h1><p class="page-description">My first notebook</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-22T00:00:00-05:00" itemprop="datePublished">
-        Aug 22, 2022
-      </time>
-       • <span class="read-time" title="Estimated read time">
-    
-    
-      1 min read
-    
-</span></p>
+<!--- This section is Cascading Style Sheet (CSS) and applies to HTML -->
+<style>
+/* "row style" is flexible size and aligns pictures in center */
+.row {
+  align-items: center;
+  display: flex;
+}
+#map {
+      height: 700px; /* The height is 400 pixels */
+      width: 150%; /* The width is the width of the web page */
+}
 
-    
-      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+/* "column style" is one-third of the width with padding */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+</style>
+
+<h2 id="near-me-finder">Near Me Finder</h2>
+<div id="map"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0erTF9F5UoSk6YZ4wIWNg0j7vbkSXGcw&amp;callback=initMap&amp;v=weekly" defer=""></script>
+
+<script>                              
+      // Initialize and add the map
+      function initMap() {
+        // The location of Borrego Springs
+        var sd = { lat: 33.1005, lng: -116.3013 };
+        // The map, centered at Uluru
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 9,
+          center: sd,
+        });
+           // Array of markers 
+        var markers = [
+          {
+          coords : {lat: 32.7157, lng: -117.1611}, 
+          content: '<p style="color:blue;">Padres FanFest mayhem: Long lines, crowded concourses, and delayed entry</p>' 
+          },
+          {
+          coords : {lat: 33.4934, lng: -117.1488}, 
+          content: '<p style="color:blue;">Temecula - Forklifts Stolen From Home Depot</p>'  
+          }, 
+          {
+          coords : {lat: 33.6846, lng: -117.8265}, 
+          content: '<p style="color:blue;">Long Beach State beats UC Irvine in OT</p> '  
+          }, 
+          {  
+          coords : {lat: 32.7920, lng: -115.5631}, 
+          content: '<p style="color:blue;"> El Centro will conduct a public hearing for new parks</p>'  
+          }, 
+          {
+          coords : {lat: 33.8734, lng: -115.9010}, 
+          content: '<p style="color:blue;">Backpacking Permits For Joshua Tree National Park Available Online</p>'  
+          },
+          {
+          coords : {lat: 33.1192, lng: -117.0864}, 
+          content: '<p style="color:blue;">Escondido council appoints Palomar College trustee to vacant seat</p>'  
+          },
+          {
+          coords : {lat: 33.3286, lng: -115.8434}, 
+          content: '<p style="color:blue;">Salton Sea reduced inflow, the lake is shrinking and rising in salinity.</p>'  
+          },
+	
+        ];
       
-        <a class="category-tags-link" href="/james-fastpage/categories/#jupyter">jupyter</a>
-        &nbsp;
-      
-        <a class="category-tags-link" href="/james-fastpage/categories/#python">python</a>
-        
-      
-      </p>
-    
+        // Loop through markers 
+        for(var i = 0; i < markers.length; i++) { 
+          addMarker(markers[i]); 
+        }
+                                          
+        // Add Marker Function 
+        function addMarker(props){ 
+          var marker =  new google.maps.Marker({ 
+            position:props.coords, 
+            map:map, 
+          });
+          // Check content 
+          if(props.content) { 
+               var infoWindow = new google.maps.InfoWindow({ 
+              content:props.content 
+               });
+            infoWindow.open(map, marker);//display by default
+            marker.addListener( 'click', function(){ 
+              infoWindow.open(map, marker); 
+            });
+          }
+        }                                          
+      }
 
-    
-      
-        <div class="pb-5 d-flex flex-justify-center">
-          <div class="px-2">
+      window.initMap = initMap;
+</script>
 
-    <a href="https://github.com/jameshunter12/james-fastpage/tree/master/_notebooks/2022-08-22-first-notebook.ipynb" role="button" target="_blank">
-<img class="notebook-badge-image" src="/james-fastpage/assets/badges/github.svg" alt="View On GitHub">
-    </a>
-</div>
+<p><br />
+<br />
+<br /></p>
+<div id="map1"></div>
 
-          <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/jameshunter12/james-fastpage/master?filepath=_notebooks%2F2022-08-22-first-notebook.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/james-fastpage/assets/badges/binder.svg" alt="Open In Binder"/>
-    </a>
-</div>
-
-          <div class="px-2">
-    <a href="https://colab.research.google.com/github/jameshunter12/james-fastpage/blob/master/_notebooks/2022-08-22-first-notebook.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/james-fastpage/assets/badges/colab.svg" alt="Open In Colab"/>
-    </a>
-</div>
-          <div class="px-2">
-  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fjameshunter12%2Fjames-fastpage%2Fblob%2Fmaster%2F_notebooks%2F2022-08-22-first-notebook.ipynb" target="_blank">
-      <img class="notebook-badge-image" src="/james-fastpage/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
-  </a>
-</div>
-
-        </div>
-      </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
-</ul><!--
-#################################################
-### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
-#################################################
-# file to edit: _notebooks/2022-08-22-first-notebook.ipynb
--->
-
-<div class="container" id="notebook-container">
-        
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"hello"</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>hello
-</pre>
-</div>
-</div>
 
 </div>
-</div>
-
-</div>
-    
-
-</div>
-
-
-
-  </div><!-- from https://github.com/utterance/utterances -->
-<script src="https://utteranc.es/client.js"
-        repo="jameshunter12/james-fastpage"
-        issue-term="title"
-        label="blogpost-comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script><a class="u-url" href="/james-fastpage/jupyter/python/2022/08/22/first-notebook.html" hidden></a>
-</article>
-
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/james-fastpage/"></data>
