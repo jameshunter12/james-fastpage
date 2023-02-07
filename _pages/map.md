@@ -1,10 +1,3 @@
----
-layout: default
-permalink: /mapsapi/
-title: Near Me Finder
-search_exclude: true
----
-
 <!--- This section is Cascading Style Sheet (CSS) and applies to HTML -->
 <style>
 /* "row style" is flexible size and aligns pictures in center */
