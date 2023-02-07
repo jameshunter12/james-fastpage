@@ -1,3 +1,9 @@
+---
+layout: categories
+permalink: /nearmefinder/
+title: Near Me Finder
+search_exclude: true
+---
 <!--- This section is Cascading Style Sheet (CSS) and applies to HTML -->
 <style>
 /* "row style" is flexible size and aligns pictures in center */
@@ -17,7 +23,7 @@
 }
 </style>
 
-## Breaking News with Maps API
+## Near Me Finder
 <div id="map"></div>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0erTF9F5UoSk6YZ4wIWNg0j7vbkSXGcw&callback=initMap&v=weekly" defer></script>
