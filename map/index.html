@@ -71,9 +71,9 @@ window.onload = wrap_img;
       <div class="wrapper">
         <div class="home">
 
-<!--- This section is Cascading Style Sheet (CSS) and applies to HTML -->
+<!--- CSS Styling Sheet-->
 <style>
-/* "row style" is flexible size and aligns pictures in center */
+
 .row {
   align-items: center;
   display: flex;
@@ -83,7 +83,6 @@ window.onload = wrap_img;
       width: 150%; /* The width is the width of the web page */
 }
 
-/* "column style" is one-third of the width with padding */
 .column {
   flex: 33.33%;
   padding: 5px;
@@ -100,40 +99,40 @@ window.onload = wrap_img;
       function initMap() {
         // The location of Borrego Springs
         var sd = { lat: 33.1005, lng: -116.3013 };
-        // The map, centered at Uluru
+
         var map = new google.maps.Map(document.getElementById("map"), {
           zoom: 9,
           center: sd,
         });
-           // Array of markers 
+
         var markers = [
           {
-          coords : {lat: 32.7157, lng: -117.1611}, 
-          content: '<p style="color:blue;">Padres FanFest mayhem: Long lines, crowded concourses, and delayed entry</p>' 
+          coords : {lat: 32.832809, lng: -117.271271}, 
+          content: '<p style="color:blue;">House 1-La Jolla</p>' 
           },
           {
-          coords : {lat: 33.4934, lng: -117.1488}, 
-          content: '<p style="color:blue;">Temecula - Forklifts Stolen From Home Depot</p>'  
+          coords : {lat: 32.999780, lng: -117.257200}, 
+          content: '<p style="color:blue;">House 2-North Pacific Beach</p>'  
           }, 
           {
-          coords : {lat: 33.6846, lng: -117.8265}, 
-          content: '<p style="color:blue;">Long Beach State beats UC Irvine in OT</p> '  
+          coords : {lat: 32.713631, lng: -117.155602}, 
+          content: '<p style="color:blue;">House 3-Downtown San Diego</p> '  
           }, 
           {  
-          coords : {lat: 32.7920, lng: -115.5631}, 
-          content: '<p style="color:blue;"> El Centro will conduct a public hearing for new parks</p>'  
+          coords : {lat: 33.158350, lng: -117.032630}, 
+          content: '<p style="color:blue;"> Daves Hot Chicken (Food)</p>'  
           }, 
           {
-          coords : {lat: 33.8734, lng: -115.9010}, 
-          content: '<p style="color:blue;">Backpacking Permits For Joshua Tree National Park Available Online</p>'  
+          coords : {lat: 32.912239, lng: -117.147217}, 
+          content: '<p style="color:blue;">Raising Canes (Food)</p>'  
           },
           {
-          coords : {lat: 33.1192, lng: -117.0864}, 
-          content: '<p style="color:blue;">Escondido council appoints Palomar College trustee to vacant seat</p>'  
+          coords : {lat: 32.769939, lng: -117.251091}, 
+          content: '<p style="color:blue;">Belmont Park (Activity)</p>'  
           },
           {
-          coords : {lat: 33.3286, lng: -115.8434}, 
-          content: '<p style="color:blue;">Salton Sea reduced inflow, the lake is shrinking and rising in salinity.</p>'  
+          coords : {lat: 33.842640, lng: -118.017260}, 
+          content: '<p style="color:blue;">Waterfront Park (Activity)</p>'  
           },
 	
         ];
@@ -143,18 +142,18 @@ window.onload = wrap_img;
           addMarker(markers[i]); 
         }
                                           
-        // Add Marker Function 
+        // Add Marker 
         function addMarker(props){ 
           var marker =  new google.maps.Marker({ 
             position:props.coords, 
             map:map, 
           });
-          // Check content 
+
           if(props.content) { 
                var infoWindow = new google.maps.InfoWindow({ 
               content:props.content 
                });
-            infoWindow.open(map, marker);//display by default
+            infoWindow.open(map, marker);
             marker.addListener( 'click', function(){ 
               infoWindow.open(map, marker); 
             });
