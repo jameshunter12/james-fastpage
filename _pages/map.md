@@ -64,8 +64,8 @@ search_exclude: true
           content: '<p style="color:blue;">Belmont Park (Activity)</p>'  
           },
           {
-          coords : {lat: 33.842640, lng: -118.017260}, 
-          content: '<p style="color:blue;">Waterfront Park (Activity)</p>'  
+          coords : {lat: 33.010290, lng: -116.947480}, 
+          content: '<p style="color:blue;">Potato Chip Rock (Activity)</p>'  
           },
 	
         ];
