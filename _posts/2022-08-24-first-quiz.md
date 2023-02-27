@@ -8,7 +8,7 @@ comments: true
 categories: [jupyter, python]
 image: images/chart-preview.png
 nb_path: _notebooks/2022-08-24-first quiz.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--

@@ -7,7 +7,7 @@ badges: true
 comments: true
 categories: [markdown]
 nb_path: _notebooks/2022-10-01-collegeboard-big-idea-1-notes.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--

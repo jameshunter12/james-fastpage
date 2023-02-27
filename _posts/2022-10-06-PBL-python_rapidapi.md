@@ -10,7 +10,7 @@ tags: [api, rapidapi]
 type: pbl
 week: 7
 nb_path: _notebooks/2022-10-06-PBL-python_rapidapi.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--

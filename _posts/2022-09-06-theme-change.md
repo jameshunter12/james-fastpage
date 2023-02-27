@@ -6,7 +6,7 @@ badges: true
 comments: true
 categories: [jupyter,]
 nb_path: _notebooks/2022-09-06-theme-change.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--

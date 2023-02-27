@@ -10,7 +10,7 @@ categories: [3.B, 5.A, 5.B, C5.0, C7.0, C7.6]
 type: pbl
 week: 9
 nb_path: _notebooks/2022-10-17-PBL-webapi_tutorial.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--

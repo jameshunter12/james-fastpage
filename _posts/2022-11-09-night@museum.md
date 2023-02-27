@@ -7,7 +7,7 @@ badges: true
 comments: true
 categories: [markdown]
 nb_path: _notebooks/2022-11-09-night@museum.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--

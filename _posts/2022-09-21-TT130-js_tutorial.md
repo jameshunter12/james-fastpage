@@ -8,7 +8,7 @@ permalink: /techtalk/javascript
 image: /images/javascript.png
 categories: [techtalk]
 nb_path: _notebooks/2022-09-21-TT130-js_tutorial.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--

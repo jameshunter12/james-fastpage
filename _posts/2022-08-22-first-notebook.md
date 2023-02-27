@@ -7,7 +7,7 @@ badges: true
 comments: true
 categories: [jupyter, python]
 nb_path: _notebooks/2022-08-22-first-notebook.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--

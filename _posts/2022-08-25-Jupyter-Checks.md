@@ -8,7 +8,7 @@ comments: true
 categories: [jupyter, bash]
 image: images/chart-preview.png
 nb_path: _notebooks/2022-08-25-Jupyter-Checks.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--

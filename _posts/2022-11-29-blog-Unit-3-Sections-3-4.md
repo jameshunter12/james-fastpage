@@ -7,7 +7,7 @@ badges: true
 comments: true
 categories: [markdown]
 nb_path: _notebooks/2022-11-29-blog-Unit-3-Sections-3-4.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--

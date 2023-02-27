@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+layout: base
 description: Grades for every lesson
 categories: [markdown, java]
 title: Grades for All Lessons

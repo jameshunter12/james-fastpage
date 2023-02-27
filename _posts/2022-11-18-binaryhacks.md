@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 permalink: /binhacks
 title: Binary Hacks
 search_exclude: true

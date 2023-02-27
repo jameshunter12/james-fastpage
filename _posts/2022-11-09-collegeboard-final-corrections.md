@@ -7,7 +7,7 @@ badges: true
 comments: true
 categories: [markdown]
 nb_path: _notebooks/2022-11-09-collegeboard-final-corrections.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--

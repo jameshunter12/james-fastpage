@@ -7,7 +7,7 @@ badges: true
 comments: true
 categories: [jupyter]
 nb_path: _notebooks/2022-11-28-blog-Unit-3-Section-1-2.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--

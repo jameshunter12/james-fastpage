@@ -7,7 +7,7 @@ badges: true
 comments: true
 categories: [markdown]
 nb_path: _notebooks/2022-10-28-problems-and-solutions.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--

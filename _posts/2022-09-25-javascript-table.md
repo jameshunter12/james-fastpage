@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+layout: base
 description: Important links relating to JavaScript
 categories: [markdown, java]
 title: Java Script Table
