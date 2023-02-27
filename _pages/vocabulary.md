@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 permalink: /Vocabulary/
 title: Vocabulary
 search_exclude: true

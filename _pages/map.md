@@ -1,5 +1,5 @@
 ---
-layout: categories
+layout: base
 permalink: /map/
 title: Near Me Finder
 search_exclude: true

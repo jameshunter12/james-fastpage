@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 title: Chapter 1 Notes
 permalink: /Chapter 1 Notes/
 type: pbl
