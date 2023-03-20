@@ -405,14 +405,40 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Records exist uid toby, or error.
-Records exist uid niko, or error.
-Records exist uid lex, or error.
-Records exist uid whit, or error.
-Records exist uid indi, or error.
-Records exist uid raven, or error.
-</pre>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">UnboundExecutionError</span>                     Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 8</span> in <span class="ansi-cyan-fg">&lt;cell line: 30&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=26&#39;&gt;27&lt;/a&gt;</span>                 &#39;&#39;&#39;fails with bad or duplicate data&#39;&#39;&#39;
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=27&#39;&gt;28&lt;/a&gt;</span>                 print(f&#34;Records exist uid {user.uid}, or error.&#34;)
+<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=29&#39;&gt;30&lt;/a&gt;</span> initUsers()
+
+<span class="ansi-green-intense-fg ansi-bold">/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 8</span> in <span class="ansi-cyan-fg">initUsers</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span> with app.app_context():
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span>     &#34;&#34;&#34;Create database and tables&#34;&#34;&#34;
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span>     db.create_all()
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span>     &#34;&#34;&#34;Tester data for table&#34;&#34;&#34;
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=9&#39;&gt;10&lt;/a&gt;</span>     u1 = User(name=&#39;Thomas Edison&#39;, uid=&#39;toby&#39;, password=&#39;123toby&#39;, dob=datetime(1847, 2, 11))
+
+File <span class="ansi-green-fg">/opt/anaconda3/lib/python3.9/site-packages/flask_sqlalchemy/extension.py:884</span>, in <span class="ansi-cyan-fg">SQLAlchemy.create_all</span><span class="ansi-blue-fg">(self, bind_key)</span>
+<span class="ansi-green-intense-fg ansi-bold">    867</span> def create_all(self, bind_key: str | None | list[str | None] = &#34;__all__&#34;) -&gt; None:
+<span class="ansi-green-intense-fg ansi-bold">    868</span>     &#34;&#34;&#34;Create tables that do not exist in the database by calling
+<span class="ansi-green-intense-fg ansi-bold">    869</span>     ``metadata.create_all()`` for all or some bind keys. This does not
+<span class="ansi-green-intense-fg ansi-bold">    870</span>     update existing tables, use a migration library for that.
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">    882</span>         Added the ``bind`` and ``app`` parameters.
+<span class="ansi-green-intense-fg ansi-bold">    883</span>     &#34;&#34;&#34;
+<span class="ansi-green-fg">--&gt; 884</span>     self._call_for_binds(bind_key, &#34;create_all&#34;)
+
+File <span class="ansi-green-fg">/opt/anaconda3/lib/python3.9/site-packages/flask_sqlalchemy/extension.py:862</span>, in <span class="ansi-cyan-fg">SQLAlchemy._call_for_binds</span><span class="ansi-blue-fg">(self, bind_key, op_name)</span>
+<span class="ansi-green-intense-fg ansi-bold">    859</span>     if key is None:
+<span class="ansi-green-intense-fg ansi-bold">    860</span>         message = f&#34;&#39;SQLALCHEMY_DATABASE_URI&#39; config is not set. {message}&#34;
+<span class="ansi-green-fg">--&gt; 862</span>     raise sa.exc.UnboundExecutionError(message) from None
+<span class="ansi-green-intense-fg ansi-bold">    864</span> metadata = self.metadatas[key]
+<span class="ansi-green-intense-fg ansi-bold">    865</span> getattr(metadata, op_name)(bind=engine)
+
+<span class="ansi-red-fg">UnboundExecutionError</span>: &#39;SQLALCHEMY_DATABASE_URI&#39; config is not set. Bind key &#39;None&#39; is not in &#39;SQLALCHEMY_BINDS&#39; config.</pre>
 </div>
 </div>
 
@@ -463,22 +489,6 @@ Records exist uid raven, or error.
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>True</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -588,56 +598,6 @@ Records exist uid raven, or error.
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[{&#39;id&#39;: 1,
-  &#39;name&#39;: &#39;Thomas Edison&#39;,
-  &#39;uid&#39;: &#39;toby&#39;,
-  &#39;dob&#39;: &#39;02-11-1847&#39;,
-  &#39;age&#39;: 176},
- {&#39;id&#39;: 2,
-  &#39;name&#39;: &#39;Nicholas Tesla&#39;,
-  &#39;uid&#39;: &#39;niko&#39;,
-  &#39;dob&#39;: &#39;02-23-2023&#39;,
-  &#39;age&#39;: 0},
- {&#39;id&#39;: 3,
-  &#39;name&#39;: &#39;Alexander Graham Bell&#39;,
-  &#39;uid&#39;: &#39;lex&#39;,
-  &#39;dob&#39;: &#39;02-23-2023&#39;,
-  &#39;age&#39;: 0},
- {&#39;id&#39;: 4,
-  &#39;name&#39;: &#39;Eli Whitney&#39;,
-  &#39;uid&#39;: &#39;whit&#39;,
-  &#39;dob&#39;: &#39;02-23-2023&#39;,
-  &#39;age&#39;: 0},
- {&#39;id&#39;: 5,
-  &#39;name&#39;: &#39;John Mortensen&#39;,
-  &#39;uid&#39;: &#39;jm1021&#39;,
-  &#39;dob&#39;: &#39;10-21-1959&#39;,
-  &#39;age&#39;: 63},
- {&#39;id&#39;: 6,
-  &#39;name&#39;: &#39;Indiana Jones&#39;,
-  &#39;uid&#39;: &#39;indi&#39;,
-  &#39;dob&#39;: &#39;10-21-1920&#39;,
-  &#39;age&#39;: 102},
- {&#39;id&#39;: 7,
-  &#39;name&#39;: &#39;Marion Ravenwood&#39;,
-  &#39;uid&#39;: &#39;raven&#39;,
-  &#39;dob&#39;: &#39;10-21-1921&#39;,
-  &#39;age&#39;: 101}]</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
