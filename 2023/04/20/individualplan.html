@@ -79,6 +79,19 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hack-Problem">Hack Problem<a class="anchor-link" href="#Hack-Problem"> </a></h1><ul>
+<li>Use this link <a href="https://github.com/ali-ce/datasets">https://github.com/ali-ce/datasets</a> to select a topic you are interested in.</li>
+<li>Once you select your topic make sure it is a csv file and then you want to press on the button that says raw</li>
+<li>After that copy that information and create a file with a name and .csv at the end and paste your information</li>
+<li>Below is a start that you can use for your hacks</li>
+<li>Your goal is to print 2 specific parts from data (example could be like population and country)</li>
+</ul>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -93,9 +106,6 @@ window.onload = wrap_img;
 
 <span class="c1"># display the data in a table</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-
-<span class="c1"># display the number of countries in the data</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of countries:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -107,62 +117,36 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-04-20-individualplan.ipynb Cell 2</span> in <span class="ansi-cyan-fg">&lt;cell line: 1&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-04-20-individualplan.ipynb#W2sZmlsZQ%3D%3D?line=0&#39;&gt;1&lt;/a&gt;</span> import pandas as pd
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-04-20-individualplan.ipynb#W2sZmlsZQ%3D%3D?line=2&#39;&gt;3&lt;/a&gt;</span> # read the CSV file
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-04-20-individualplan.ipynb#W2sZmlsZQ%3D%3D?line=3&#39;&gt;4&lt;/a&gt;</span> df = pd.read_csv(&#34;starbucks.csv&#34;)
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>                Country  Population  Numer of Starbucks  \
+0         United States   316128839               11851   
+1                 China  1357380000                1462   
+2                Canada    35158304                1425   
+3                 Japan   127338621                1052   
+4        United Kingdom    64097085                 770   
+..                  ...         ...                 ...   
+58                Aruba      102911                   3   
+59              Finland     5439407                   3   
+60             Colombia    48321405                   2   
+61  Netherland Antilles      227049                   2   
+62               Monaco       37831                   1   
 
-File <span class="ansi-green-fg">/opt/anaconda3/lib/python3.9/site-packages/pandas/__init__.py:135</span>, in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">    117</span> from pandas.core.computation.api import eval
-<span class="ansi-green-intense-fg ansi-bold">    119</span> from pandas.core.reshape.api import (
-<span class="ansi-green-intense-fg ansi-bold">    120</span>     concat,
-<span class="ansi-green-intense-fg ansi-bold">    121</span>     lreshape,
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">    132</span>     qcut,
-<span class="ansi-green-intense-fg ansi-bold">    133</span> )
-<span class="ansi-green-fg">--&gt; 135</span> from pandas import api, arrays, errors, io, plotting, testing, tseries
-<span class="ansi-green-intense-fg ansi-bold">    136</span> from pandas.util._print_versions import show_versions
-<span class="ansi-green-intense-fg ansi-bold">    138</span> from pandas.io.api import (
-<span class="ansi-green-intense-fg ansi-bold">    139</span>     # excel
-<span class="ansi-green-intense-fg ansi-bold">    140</span>     ExcelFile,
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">    168</span>     read_spss,
-<span class="ansi-green-intense-fg ansi-bold">    169</span> )
+    Starbucks per million inhabitants  
+0                               37.49  
+1                                1.08  
+2                               40.53  
+3                                8.26  
+4                               12.01  
+..                                ...  
+58                              29.15  
+59                               0.55  
+60                               0.04  
+61                               8.81  
+62                              26.43  
 
-File <span class="ansi-green-fg">/opt/anaconda3/lib/python3.9/site-packages/pandas/testing.py:6</span>, in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> &#34;&#34;&#34;
-<span class="ansi-green-intense-fg ansi-bold">      2</span> Public testing utility functions.
-<span class="ansi-green-intense-fg ansi-bold">      3</span> &#34;&#34;&#34;
-<span class="ansi-green-fg">----&gt; 6</span> from pandas._testing import (
-<span class="ansi-green-intense-fg ansi-bold">      7</span>     assert_extension_array_equal,
-<span class="ansi-green-intense-fg ansi-bold">      8</span>     assert_frame_equal,
-<span class="ansi-green-intense-fg ansi-bold">      9</span>     assert_index_equal,
-<span class="ansi-green-intense-fg ansi-bold">     10</span>     assert_series_equal,
-<span class="ansi-green-intense-fg ansi-bold">     11</span> )
-<span class="ansi-green-intense-fg ansi-bold">     13</span> __all__ = [
-<span class="ansi-green-intense-fg ansi-bold">     14</span>     &#34;assert_extension_array_equal&#34;,
-<span class="ansi-green-intense-fg ansi-bold">     15</span>     &#34;assert_frame_equal&#34;,
-<span class="ansi-green-intense-fg ansi-bold">     16</span>     &#34;assert_series_equal&#34;,
-<span class="ansi-green-intense-fg ansi-bold">     17</span>     &#34;assert_index_equal&#34;,
-<span class="ansi-green-intense-fg ansi-bold">     18</span> ]
-
-File <span class="ansi-green-fg">/opt/anaconda3/lib/python3.9/site-packages/pandas/_testing/__init__.py:979</span>, in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">    974</span>     import pytest
-<span class="ansi-green-intense-fg ansi-bold">    976</span>     return pytest.raises(expected_exception, match=None)  # noqa: PDF010
-<span class="ansi-green-fg">--&gt; 979</span> cython_table = pd.core.common._cython_table.items()
-<span class="ansi-green-intense-fg ansi-bold">    982</span> def get_cython_table_params(ndframe, func_names_and_expected):
-<span class="ansi-green-intense-fg ansi-bold">    983</span>     &#34;&#34;&#34;
-<span class="ansi-green-intense-fg ansi-bold">    984</span>     Combine frame, functions from com._cython_table
-<span class="ansi-green-intense-fg ansi-bold">    985</span>     keys and expected result.
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">    997</span>         List of three items (DataFrame, function, expected result)
-<span class="ansi-green-intense-fg ansi-bold">    998</span>     &#34;&#34;&#34;
-
-<span class="ansi-red-fg">AttributeError</span>: partially initialized module &#39;pandas&#39; has no attribute &#39;core&#39; (most likely due to a circular import)</pre>
+[63 rows x 4 columns]
+Number of countries: 63
+</pre>
 </div>
 </div>
 
