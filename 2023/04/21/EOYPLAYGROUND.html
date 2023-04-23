@@ -507,6 +507,147 @@ Congratulations, you unscrambled the word!
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="General">General<a class="anchor-link" href="#General"> </a></h2><ul>
+<li><strong>What are some examples of 2d Arrays</strong></li>
+<li>Sudoku, Chessboard, Spreadsheet, Tic Tac Toe, and a Calendar</li>
+<li><strong>What is a modern day game that could be classified as a 2D array</strong></li>
+<li>Minesweeper</li>
+<li><strong>Describe a 2D array in your own words</strong></li>
+<li>A 2D array is a collection of data elements organized in a grid format consisting of rows and columns. It is a data structure that can be used to store and manipulate data.</li>
+<li><strong>What is the defenition of iteration in your own words</strong></li>
+<li>Iteration is a process that involves repeating a set of instructions or code multiple times until a specific condition is met or a desired result is achieved. </li>
+<li><strong>What parts of the code use iteration</strong></li>
+<li>The following parts of the code use iteration:</li>
+<li>The "for" loops used to push 'up', 'down', 'left', and 'right' movements to the 'movements' array use iteration to repeat the code block multiple times.</li>
+<li>The "setInterval" function is also an example of iteration, as it executes the provided function repeatedly at a specified interval until the condition of the "if" statement is met.</li>
+<li><strong>Explain which parts of the code use lists</strong></li>
+<li>The following parts of the code use lists:</li>
+<li>The variable "word_list" is a list of words that can be randomly selected for the game.</li>
+<li>The line "word = random.choice(word_list)" selects a random word from the "word_list" and assigns it to the variable "word".</li>
+<li>The line "scrambled_word = "".join(random.sample(word, len(word)))" uses the "random.sample" function to shuffle the letters of the selected word, and then joins them back together into a string.</li>
+<li><strong>Explain what list manipulation is happening in that part</strong></li>
+<li>The list manipulation happens when creating the scrambled_word variable. It takes a word from the word_list and shuffles its letters using random.sample() to create a new, scrambled version of the word. The join() function then concatenates the shuffled letters back together into a string. This process manipulates the order of the letters in the word to create a new list, which is then turned into a string.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Iteration">Iteration<a class="anchor-link" href="#Iteration"> </a></h2><p><figure>
+  
+    <img class="docimage" src="/james-fastpage/images/copied_from_nb/game.png" alt="" style="max-width: 600px" />
+    
+    
+</figure>
+</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2D-Array">2D Array<a class="anchor-link" href="#2D-Array"> </a></h2><ul>
+<li>The 2D array board is used to represent the Tic-Tac-Toe game board. It is a list of three lists, where each list contains three elements representing a row of the board. Each element can have the value 'X', 'O', or ' ' (an empty space).</li>
+<li>Minesweeper, Battleship, and Connect Four</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="List-and-Dictionaries">List and Dictionaries<a class="anchor-link" href="#List-and-Dictionaries"> </a></h2><ul>
+<li>A list is an ordered collection of elements that can be of any data type. Elements in a list are stored in a linear sequence and are indexed by their position in the list. Lists can be modified after creation. You can add, remove, or modify elements in a list. You can also access individual elements of a list using indexing operations.</li>
+<li>A dictionar is an unordered collection of key-value pairs. Each element in a dictionary is identified by a unique key, which is used to retrieve the corresponding value. Dictionariescan be modified by adding, removing, or updating key-value pairs. Unlike lists, dictionaries are not indexed by position; instead, they are indexed by their keys.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="n">numbers</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+
+<span class="n">numbers</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1, 2, 3, 4, 5]
+[2, 3, 4, 5]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
