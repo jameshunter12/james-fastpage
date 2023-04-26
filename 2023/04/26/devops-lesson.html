@@ -90,12 +90,27 @@ window.onload = wrap_img;
 
 <span class="c1"># Change the following host and see what IP it prints!</span>
 <span class="n">host</span> <span class="o">=</span> <span class="s2">&quot;google.com&quot;</span>
+<span class="c1"># this allows us to translate a host name into an ip adress</span>
 <span class="n">ip</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">gethostbyname</span><span class="p">(</span><span class="n">host</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">ip</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>142.250.176.14
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -118,14 +133,30 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Successfully connected!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Check-In">Check-In<a class="anchor-link" href="#Check-In"> </a></h2><ol>
-<li>What is an IP address?</li>
-<li>What is a TCP port?</li>
+<li>What is an IP address?
+IP address is used to identify and communicate with devices on a certain network suhc as a computer.</li>
+<li>What is a TCP port?
+TCP allows us to tell if each packet is received correctly. Allows us to abstract and reassemble certain parts of data during a transaction.</li>
 </ol>
 
 </div>
@@ -150,6 +181,38 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>HTTP/1.1 200 OK
+Date: Wed, 26 Apr 2023 21:17:57 GMT
+Expires: -1
+Cache-Control: private, max-age=0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Security-Policy-Report-Only: object-src &#39;none&#39;;base-uri &#39;self&#39;;script-src &#39;nonce-bHrEzxzpzfm0d5NL0gTXZg&#39; &#39;strict-dynamic&#39; &#39;report-sample&#39; &#39;unsafe-eval&#39; &#39;unsafe-inline&#39; https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+P3P: CP=&#34;This is not a P3P policy! See g.co/p3phelp for more info.&#34;
+Server: gws
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: 1P_JAR=2023-04-26-21; expires=Fri, 26-May-2023 21:17:57 GMT; path=/; domain=.google.com; Secure
+Set-Cookie: AEC=AUEFqZdAlWz4-9l0KqlAMRQKpxhOCoQ9VA3kjsWDiMtFZJDiwXCujGYCn5U; expires=Mon, 23-Oct-2023 21:17:57 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax
+Set-Cookie: NID=511=RFJSRnkRFU_255ZzSq6OzIFrl1bzangQJZFn_IpX0L1fpczy1sojvcXzbTprR0pZ26HznWej8GN4r_kXhmTxGfgIydAqyo0Fjj2HhdlvDviBy_hL-SaCMM6LADHSK065jkBfMj5nIASQZcnrBCiPwHuwaNckQ88zDt-Xk0N4oEg; expires=Thu, 26-Oct-2023 21:17:57 GMT; path=/; domain=.google.com; HttpOnly
+Accept-Ranges: none
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+
+5958
+&lt;!doctype html&gt;&lt;html itemscope=&#34;&#34; itemtype=&#34;http://schema.org/WebPage&#34; lang=&#34;en&#34;&gt;&lt;head&gt;&lt;meta content=&#34;Search the world&#39;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#39;re looking for.&#34; name=&#34;description&#34;&gt;&lt;meta content=&#34;noodp&#34; name=&#34;robots&#34;&gt;&lt;meta content=&#34;text/html; charset=UTF-8&#34; http-equiv=&#34;Content-Type&#34;&gt;&lt;meta content=&#34;/images/branding/googleg/1x/googleg_standard_color_128dp.png&#34; itemprop=&#34;image&#34;&gt;&lt;title&gt;Google&lt;/title&gt;&lt;script nonce=&#34;bHrEzxzpzfm0d5NL0gTXZg&#34;&gt;(function(){window.google={kEI:&#39;BZVJZOalLIm9kPIP1f-i4A8&#39;,kEXPI:&#39;0,1359409,6059,206,4804,2316,383,246,5,1129120,1197792,609,380090,16114,19397,9287,22431,1361,12316,2818,1930,12835,4998,13228,3847,3599,34845,2872,2891,3926,214,7614,606,29842,30848,15324,432,3,346,1244,1,16916,2652,4,1528,2304,29062,13065,11442,2216,2980,1457,16786,5779,2578,4094,759
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -180,6 +243,22 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Status code: 200
+Headers: {&#39;Date&#39;: &#39;Wed, 26 Apr 2023 21:18:00 GMT&#39;, &#39;Expires&#39;: &#39;-1&#39;, &#39;Cache-Control&#39;: &#39;private, max-age=0&#39;, &#39;Content-Type&#39;: &#39;text/html; charset=ISO-8859-1&#39;, &#39;Content-Security-Policy-Report-Only&#39;: &#34;object-src &#39;none&#39;;base-uri &#39;self&#39;;script-src &#39;nonce-NSaV3kce_CSGmViAU4teQQ&#39; &#39;strict-dynamic&#39; &#39;report-sample&#39; &#39;unsafe-eval&#39; &#39;unsafe-inline&#39; https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp&#34;, &#39;P3P&#39;: &#39;CP=&#34;This is not a P3P policy! See g.co/p3phelp for more info.&#34;&#39;, &#39;Content-Encoding&#39;: &#39;gzip&#39;, &#39;Server&#39;: &#39;gws&#39;, &#39;X-XSS-Protection&#39;: &#39;0&#39;, &#39;X-Frame-Options&#39;: &#39;SAMEORIGIN&#39;, &#39;Set-Cookie&#39;: &#39;1P_JAR=2023-04-26-21; expires=Fri, 26-May-2023 21:18:00 GMT; path=/; domain=.google.com; Secure, AEC=AUEFqZcjkoWSrPlQZqZQdqYV7Y3_LlHjrxHYOHv6bddmR-0QK7tq49B0PQ; expires=Mon, 23-Oct-2023 21:18:00 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax, NID=511=DhJTL2wismyoW66bQ8svgzuu8Ft2U2Z5DDJc-l0A2bn4ovv181VqqPUZWPbWxm8DWOQMlXaNpcD66wf-UacRMGuyrsjYx7-JAcko46T2beTd3o-ic1KtF5s_KhYiBvudNg98xCYfCUjBAIDrXowjpWWJLDVl_IUCy0uuEYH1Sng; expires=Thu, 26-Oct-2023 21:18:00 GMT; path=/; domain=.google.com; HttpOnly&#39;, &#39;Alt-Svc&#39;: &#39;h3=&#34;:443&#34;; ma=2592000,h3-29=&#34;:443&#34;; ma=2592000&#39;, &#39;Transfer-Encoding&#39;: &#39;chunked&#39;}
+Response text: &lt;!doctype html&gt;&lt;html itemscope=&#34;&#34; itemtype=&#34;http://schema.org/WebPage&#34; lang=&#34;en&#34;&gt;&lt;head&gt;&lt;meta content
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -203,6 +282,28 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;html&gt;&lt;head&gt;&lt;title&gt;ContentKeeper&lt;/title&gt;&lt;/heQad&gt;
+&lt;body bgcolor=&#34;#A02E5F&#34; text=&#34;White&#34; link=&#34;Lime&#34; vlink=&#34;Aqua&#34;&gt;
+&lt;center&gt;&lt;br&gt;&lt;h1&gt;ContentKeeper&lt;br&gt;Non-Managed Site&lt;/h1&gt;
+No access is available to NON-Managed Sites.&lt;br&gt;&lt;br&gt;
+&lt;table border=&#34;1&#34; cellspacing=&#34;0&#34;&gt;
+&lt;tr&gt;&lt;td&gt;URL&lt;/td&gt;&lt;td&gt;&lt;b&gt;3.130.255.192&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Username&lt;/td&gt;&lt;td&gt;&lt;b&gt;1924258/pusd&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/body&gt;&lt;/html&gt;
+
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -267,6 +368,20 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The secret header is: ...
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
