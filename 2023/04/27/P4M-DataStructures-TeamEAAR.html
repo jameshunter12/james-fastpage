@@ -720,6 +720,84 @@ d
 
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">CPT_List</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Daves&quot;</span><span class="p">,</span> <span class="s2">&quot;Canes&quot;</span><span class="p">,</span> <span class="s2">&quot;Hike&quot;</span><span class="p">,</span> <span class="s2">&quot;Park&quot;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">variable</span> <span class="ow">in</span> <span class="n">CPT_List</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">variable</span><span class="p">)</span>
+
+<span class="c1">#the code segment will run until each variable is displayed within the CPT_List</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Daves
+Canes
+Hike
+Park
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">CPT_List</span><span class="p">[</span><span class="n">num</span><span class="p">])</span>
+    <span class="n">num</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="c1">#the code segement defines a variable &quot;num&quot; and assigns it the value of 0. It uses a while loop that will continue executing until the condition num &lt; 3 is false, which prints the first 3 values.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Daves
+Canes
+Hike
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
 <span class="n">my_list</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
@@ -875,6 +953,29 @@ d
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb Cell 36</span> in <span class="ansi-cyan-fg">&lt;cell line: 5&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X45sZmlsZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span>         break
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X45sZmlsZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span>     else:
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X45sZmlsZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span>         price = float(input(&#34;Enter the price of {}: &#34;.format(item)))
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X45sZmlsZQ%3D%3D?line=9&#39;&gt;10&lt;/a&gt;</span>         grocery_dict[item] = price
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X45sZmlsZQ%3D%3D?line=11&#39;&gt;12&lt;/a&gt;</span> # print the grocery list and total cost
+
+<span class="ansi-red-fg">ValueError</span>: could not convert string to float: &#39;&#39;</pre>
+</div>
+</div>
+
 </div>
 </div>
 
