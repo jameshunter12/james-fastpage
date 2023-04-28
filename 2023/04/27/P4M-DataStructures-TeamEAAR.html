@@ -540,6 +540,42 @@ orange
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nba</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;bulls&quot;</span><span class="p">,</span> <span class="s2">&quot;bucks&quot;</span><span class="p">,</span> <span class="s2">&quot;knicks&quot;</span><span class="p">,</span> <span class="s2">&quot;lakers&quot;</span><span class="p">,</span> <span class="s2">&quot;suns&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">nba</span><span class="p">)</span>
+
+<span class="n">nba</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">nba</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;bulls&#39;, &#39;bucks&#39;, &#39;knicks&#39;, &#39;lakers&#39;, &#39;suns&#39;]
+[&#39;bulls&#39;, &#39;bucks&#39;, &#39;lakers&#39;, &#39;suns&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Iteration-(Alex)">Iteration (Alex)<a class="anchor-link" href="#Iteration-(Alex)"> </a></h2><p>What is iteration?</p>
@@ -720,12 +756,9 @@ d
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">CPT_List</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Daves&quot;</span><span class="p">,</span> <span class="s2">&quot;Canes&quot;</span><span class="p">,</span> <span class="s2">&quot;Hike&quot;</span><span class="p">,</span> <span class="s2">&quot;Park&quot;</span><span class="p">]</span>
-
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">CPT_List</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Canes&quot;</span><span class="p">,</span> <span class="s2">&quot;Daves&quot;</span><span class="p">,</span> <span class="s2">&quot;Hike&quot;</span><span class="p">,</span> <span class="s2">&quot;Park&quot;</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">variable</span> <span class="ow">in</span> <span class="n">CPT_List</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">variable</span><span class="p">)</span>
-
-<span class="c1">#the code segment will run until each variable is displayed within the CPT_List</span>
 </pre></div>
 
     </div>
@@ -738,8 +771,8 @@ d
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Daves
-Canes
+<pre>Canes
+Daves
 Hike
 Park
 </pre>
@@ -764,8 +797,6 @@ Park
 <span class="k">while</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">CPT_List</span><span class="p">[</span><span class="n">num</span><span class="p">])</span>
     <span class="n">num</span> <span class="o">+=</span> <span class="mi">1</span>
-
-<span class="c1">#the code segement defines a variable &quot;num&quot; and assigns it the value of 0. It uses a while loop that will continue executing until the condition num &lt; 3 is false, which prints the first 3 values.</span>
 </pre></div>
 
     </div>
@@ -778,8 +809,8 @@ Park
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Daves
-Canes
+<pre>Canes
+Daves
 Hike
 </pre>
 </div>
@@ -890,8 +921,11 @@ Hike
 <hr />
 <h1 id="Check-In:">Check In:<a class="anchor-link" href="#Check-In:"> </a></h1><ul>
 <li>Of the above code segments, which is a list and which is a dictionary?</li>
-<li>What is a dictionary and how is it used?</li>
-<li>What is a 2D Array?</li>
+<li>This is the dictionary: student = {'name': 'Advay', 'age': 16, 'Sophomore'}</li>
+<li><p>What is a dictionary and how is it used?</p>
+</li>
+<li><p>What is a 2D Array?</p>
+</li>
 <li>How are 2D Arrays different from 1D Arrays or Lists and what can they be used for?</li>
 </ul>
 <h2 id="Manipulating-Dictionaries">Manipulating Dictionaries<a class="anchor-link" href="#Manipulating-Dictionaries"> </a></h2>
@@ -953,29 +987,6 @@ Hike
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb Cell 36</span> in <span class="ansi-cyan-fg">&lt;cell line: 5&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X45sZmlsZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span>         break
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X45sZmlsZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span>     else:
-<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X45sZmlsZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span>         price = float(input(&#34;Enter the price of {}: &#34;.format(item)))
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X45sZmlsZQ%3D%3D?line=9&#39;&gt;10&lt;/a&gt;</span>         grocery_dict[item] = price
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X45sZmlsZQ%3D%3D?line=11&#39;&gt;12&lt;/a&gt;</span> # print the grocery list and total cost
-
-<span class="ansi-red-fg">ValueError</span>: could not convert string to float: &#39;&#39;</pre>
-</div>
-</div>
-
 </div>
 </div>
 
