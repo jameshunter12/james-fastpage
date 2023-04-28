@@ -368,7 +368,7 @@ No access is available to NON-Managed Sites.&lt;br&gt;&lt;br&gt;
 <li>Modify the following code block to obtain the value of the secret header on <code>/products</code> of the AWS site</li>
 </ol>
 <ul>
-<li>ASK ABOUT</li>
+<li>Check below</li>
 </ul>
 
 </div>
@@ -416,6 +416,45 @@ No access is available to NON-Managed Sites.&lt;br&gt;&lt;br&gt;
 <li>Complete the above code-segment to retrieve the secret header (0.1)</li>
 </ul>
 <h2 id="Bonus-(0.05)">Bonus (0.05)<a class="anchor-link" href="#Bonus-(0.05)"> </a></h2><p>Create a diagram showing the layers of abstraction that allow us to use HTTP (IP, TCP, etc.)</p>
+<ul>
+<li><img src="HTTP.png" alt="" /></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="DNS-Hacks">DNS Hacks<a class="anchor-link" href="#DNS-Hacks"> </a></h1><ol>
+<li>What does DNS stand for? </li>
+</ol>
+<ul>
+<li>DNS stands for Domain Name System.</li>
+</ul>
+<ol>
+<li>What is the purpose of DNS? </li>
+</ol>
+<ul>
+<li>The purpose of DNS is turn domain names into IP addresses.</li>
+</ul>
+<ol>
+<li>How does DNS work? </li>
+</ol>
+<ul>
+<li>When a user types a domain name into their web browser, the browser sends a request to a DNS resolver, which is a server that is configured to look up the IP address associated with that domain name.</li>
+</ul>
+<ol>
+<li>What is a DNS resolver?</li>
+</ol>
+<ul>
+<li>A DNS resolver is a server that is responsible for finding domain names to IP addresses. When a user types a domain name into their browser, the browser sends a request to a DNS resolver, which then looks up the IP address associated with that domain name.</li>
+</ul>
+<ol>
+<li>Make a canva image on the process of DNS (you can base it off of the previous slide)</li>
+</ol>
+<ul>
+<li><img src="DNS.png" alt="" /></li>
+</ul>
 
 </div>
 </div>
@@ -472,9 +511,13 @@ No access is available to NON-Managed Sites.&lt;br&gt;&lt;br&gt;
 <li>The "install.sh" command is likely to have commands that install the software that it is associated with. It is necessary to call "install.sh" because it helps the installation process and ensures that all necessary dependencies are installed correctly.</li>
 </ul>
 <ol>
-<li>Explain in at least 3-4 sentences how deploying KASM is related to/requires other topics talked about in the lesson and/or potential ways to add things mentioned in the lesson to this guide.</li>
+<li>Explain in at least 3-4 sentences how deploying KASM is related to/requires other topics talked about in the lesson and/or potential ways to add things mentioned in the lesson to this guide.
+Setting up microservices to manage and secure application services across many environments is part of the KASM deployment process.</li>
 </ol>
-<p>Total: 0.2 points</p>
+<ul>
+<li>Understanding HTTP is necessary for this because it is the protocol used for microservice communication. In order for the process to function, CORS must be set up to allow cross-domain requests between microservices.
+Total: 0.2 points</li>
+</ul>
 <h1 id="AWS/RDS-Hacks-()">AWS/RDS Hacks ()<a class="anchor-link" href="#AWS/RDS-Hacks-()"> </a></h1><p>See the <a href="https://firestorm0986.github.io/SLAAT/posts/sqlite-aws/">setup post</a></p>
 <ul>
 <li>Create your own database in the EC2 I have created (ec2-database-connect)<ul>
