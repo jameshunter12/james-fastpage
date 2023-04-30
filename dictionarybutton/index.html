@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dictionary Demo</title>
+</head>
+<body>
+	<button onclick="removeElement()">Remove Element</button>
+	<p id="output"></p>
+	<script>
+		var my_dict = {"apple": 1, "banana": 2, "orange": 3};
+
+		function removeElement() {
+			delete my_dict["banana"];
+			document.getElementById("output").innerHTML = JSON.stringify(my_dict);
+		}
+	</script>
+</body>
+</html>
