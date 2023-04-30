@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Dictionary Demo</title>
+	<title>Dictionary Button</title>
 </head>
 <body>
-	<button onclick="removeElement()">Remove Element</button>
-	<p id="output"></p>
+	<h1>My List</h1>
+	<ul id="my-list">
+		<li>Green</li>
+		<li>Red</li>
+		<li>Blue</li>
+	</ul>
+	<button onclick="displayList()">Display List</button>
+	<button onclick="removeItem()">Remove Item</button>
 	<script>
-		var my_dict = {"apple": 1, "banana": 2, "orange": 3};
-
-		function removeElement() {
-			delete my_dict["banana"];
-			document.getElementById("output").innerHTML = JSON.stringify(my_dict);
+		// Get the list element
+		const myList = document.getElementById("my-list");
+		
+		// Function to display the list
+		function displayList() {
+			myList.style.display = "block";
+		}
+		
+		// Function to remove an item from the list
+		function removeItem() {
+			const items = myList.getElementsByTagName("li");
+			if (items.length > 0) {
+				myList.removeChild(items[0]);
+			}
 		}
 	</script>
 </body>
