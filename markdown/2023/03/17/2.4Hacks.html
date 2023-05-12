@@ -555,6 +555,34 @@ new DB
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-03-17-2.4Hacks.ipynb Cell 11</span> in <span class="ansi-cyan-fg">&lt;cell line: 18&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-03-17-2.4Hacks.ipynb#X13sZmlsZQ%3D%3D?line=13&#39;&gt;14&lt;/a&gt;</span>     else:
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-03-17-2.4Hacks.ipynb#X13sZmlsZQ%3D%3D?line=14&#39;&gt;15&lt;/a&gt;</span>         print(&#39;function not found&#39;)
+<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-03-17-2.4Hacks.ipynb#X13sZmlsZQ%3D%3D?line=17&#39;&gt;18&lt;/a&gt;</span> process()
+
+<span class="ansi-green-intense-fg ansi-bold">/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-03-17-2.4Hacks.ipynb Cell 11</span> in <span class="ansi-cyan-fg">process</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-03-17-2.4Hacks.ipynb#X13sZmlsZQ%3D%3D?line=1&#39;&gt;2&lt;/a&gt;</span> endpoint = input(&#34;read, delete, update, create&#34;)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-03-17-2.4Hacks.ipynb#X13sZmlsZQ%3D%3D?line=2&#39;&gt;3&lt;/a&gt;</span> if endpoint == &#34;read&#34;:
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-03-17-2.4Hacks.ipynb#X13sZmlsZQ%3D%3D?line=3&#39;&gt;4&lt;/a&gt;</span>     with app.app_context():
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-03-17-2.4Hacks.ipynb#X13sZmlsZQ%3D%3D?line=4&#39;&gt;5&lt;/a&gt;</span>         table = User.query.all()
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/jameshunter/Documents/GitHub/james-fastpage/_notebooks/2023-03-17-2.4Hacks.ipynb#X13sZmlsZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span>         json_ready = [user.read() for user in table] # &#34;List Comprehensions&#34;, for each user add user.read() to list
+
+<span class="ansi-red-fg">NameError</span>: name &#39;app&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
