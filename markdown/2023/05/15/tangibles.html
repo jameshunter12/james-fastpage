@@ -10,15 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Above is my work from APCSP" />
 <meta property="og:description" content="Above is my work from APCSP" />
-<link rel="canonical" href="https://jameshunter12.github.io/james-fastpage/markdown/2023/05/14/tangibles.html" />
-<meta property="og:url" content="https://jameshunter12.github.io/james-fastpage/markdown/2023/05/14/tangibles.html" />
+<link rel="canonical" href="https://jameshunter12.github.io/james-fastpage/markdown/2023/05/15/tangibles.html" />
+<meta property="og:url" content="https://jameshunter12.github.io/james-fastpage/markdown/2023/05/15/tangibles.html" />
 <meta property="og:site_name" content="James’ Fastpages" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-05-14T00:00:00-05:00" />
+<meta property="article:published_time" content="2023-05-15T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Lesson Plan Conclusion" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-05-14T00:00:00-05:00","datePublished":"2023-05-14T00:00:00-05:00","description":"Above is my work from APCSP","headline":"Lesson Plan Conclusion","mainEntityOfPage":{"@type":"WebPage","@id":"https://jameshunter12.github.io/james-fastpage/markdown/2023/05/14/tangibles.html"},"url":"https://jameshunter12.github.io/james-fastpage/markdown/2023/05/14/tangibles.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-05-15T00:00:00-05:00","datePublished":"2023-05-15T00:00:00-05:00","description":"Above is my work from APCSP","headline":"Lesson Plan Conclusion","mainEntityOfPage":{"@type":"WebPage","@id":"https://jameshunter12.github.io/james-fastpage/markdown/2023/05/15/tangibles.html"},"url":"https://jameshunter12.github.io/james-fastpage/markdown/2023/05/15/tangibles.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/james-fastpage/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jameshunter12.github.io/james-fastpage/feed.xml" title="James' Fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/james-fastpage/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -86,11 +86,13 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="c1"># Load the CSV file into a Pandas DataFrame</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;nba_player_stats.csv&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">stats</span><span class="p">():</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+    <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="c1"># Load the CSV file into a Pandas DataFrame</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;nba_player_stats.csv&#39;</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -222,6 +224,8 @@ Stats for Jimmy Butler:
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This bet is 50/50&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a good over bet&quot;</span><span class="p">)</span>
+
+<span class="n">points</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -234,7 +238,7 @@ Stats for Jimmy Butler:
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>20 &lt; 31.9
+<pre>1 &lt; 31.9
 This is a good over bet
 </pre>
 </div>
@@ -287,9 +291,26 @@ This is a good over bet
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This bet is 50/50&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a good over bet&quot;</span><span class="p">)</span>
+
+<span class="n">rebounds</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 &lt; 6.4
+This is a good over bet
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -336,9 +357,26 @@ This is a good over bet
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This bet is 50/50&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a good over bet&quot;</span><span class="p">)</span>
+
+<span class="n">assists</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2 &lt; 5.6
+This is a good over bet
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -354,21 +392,141 @@ This is a good over bet
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">process</span><span class="p">():</span>
 
-    <span class="n">stat</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Pick a type of stat (points, rebounds, and assists): &quot;</span><span class="p">)</span>
+    <span class="n">stats</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;stats, points, rebounds, and assists&quot;</span><span class="p">)</span>
 
-    <span class="k">if</span> <span class="n">stat</span> <span class="o">==</span> <span class="s2">&quot;points&quot;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">stats</span> <span class="o">==</span> <span class="s2">&quot;stats&quot;</span><span class="p">:</span>
+        <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+        <span class="c1"># Load the CSV file into a Pandas DataFrame</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;nba_player_stats.csv&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">stats</span> <span class="o">==</span> <span class="s2">&quot;points&quot;</span><span class="p">:</span>
+        <span class="k">def</span> <span class="nf">points</span><span class="p">():</span>
+            <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># Load the CSV file into a Pandas DataFrame</span>
+            <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;nba_player_stats.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Prompt the user to input a player name and points scored</span>
+            <span class="n">player_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the player&#39;s name: &quot;</span><span class="p">)</span>
+            <span class="n">points_line</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the players points line: &quot;</span><span class="p">))</span>
+
+<span class="c1"># Filter the DataFrame to only include rows for the input player name</span>
+            <span class="n">player_stats</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;NAME&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">player_name</span><span class="p">]</span>
+
+<span class="c1"># If the input player name is not found, print an error message and exit</span>
+            <span class="k">if</span> <span class="n">player_stats</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error: Player not found&quot;</span><span class="p">)</span>
+                <span class="n">exit</span><span class="p">()</span>
+
+<span class="c1"># Calculate the player&#39;s average points per game</span>
+            <span class="n">avg_ppg</span> <span class="o">=</span> <span class="n">player_stats</span><span class="p">[</span><span class="s1">&#39;PPG&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+            <span class="k">if</span> <span class="n">points_line</span> <span class="o">&gt;</span> <span class="n">avg_ppg</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">points_line</span> <span class="p">,</span> <span class="s2">&quot;&gt;&quot;</span> <span class="p">,</span> <span class="n">avg_ppg</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+               <span class="nb">print</span><span class="p">(</span><span class="n">points_line</span><span class="p">,</span> <span class="s2">&quot;&lt;&quot;</span> <span class="p">,</span> <span class="n">avg_ppg</span><span class="p">)</span>
+
+<span class="c1"># Compare the input points scored to the player&#39;s average points per game</span>
+            <span class="k">if</span> <span class="n">points_line</span> <span class="o">&gt;</span> <span class="n">avg_ppg</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a good under bet&quot;</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">points_line</span> <span class="o">==</span> <span class="n">avg_ppg</span><span class="p">:</span>
+               <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This bet is 50/50&quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a good over bet&quot;</span><span class="p">)</span>
+
         <span class="n">points</span><span class="p">()</span>
-    <span class="k">elif</span> <span class="n">stat</span> <span class="o">==</span> <span class="s2">&quot;rebounds&quot;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">stats</span> <span class="o">==</span> <span class="s2">&quot;rebounds&quot;</span><span class="p">:</span>
+        <span class="k">def</span> <span class="nf">rebounds</span><span class="p">():</span>
+            <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="c1"># Load the CSV file into a Pandas DataFrame</span>
+            <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;nba_player_stats.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Prompt the user to input a player name and points scored</span>
+            <span class="n">player_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the player&#39;s name: &quot;</span><span class="p">)</span>
+            <span class="n">rebound_line</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the players rebound line: &quot;</span><span class="p">))</span>
+
+<span class="c1"># Filter the DataFrame to only include rows for the input player name</span>
+            <span class="n">player_stats</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;NAME&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">player_name</span><span class="p">]</span>
+
+<span class="c1"># If the input player name is not found, print an error message and exit</span>
+            <span class="k">if</span> <span class="n">player_stats</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+              <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error: Player not found&quot;</span><span class="p">)</span>
+              <span class="n">exit</span><span class="p">()</span>
+
+<span class="c1"># Calculate the player&#39;s average points per game</span>
+            <span class="n">avg_RPG</span> <span class="o">=</span> <span class="n">player_stats</span><span class="p">[</span><span class="s1">&#39;RPG&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+            <span class="k">if</span> <span class="n">rebound_line</span> <span class="o">&gt;</span> <span class="n">avg_RPG</span><span class="p">:</span>
+              <span class="nb">print</span><span class="p">(</span><span class="n">rebound_line</span> <span class="p">,</span> <span class="s2">&quot;&gt;&quot;</span> <span class="p">,</span> <span class="n">avg_RPG</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">rebound_line</span><span class="p">,</span> <span class="s2">&quot;&lt;&quot;</span> <span class="p">,</span> <span class="n">avg_RPG</span><span class="p">)</span>
+
+<span class="c1"># Compare the input points scored to the player&#39;s average points per game</span>
+            <span class="k">if</span> <span class="n">rebound_line</span> <span class="o">&gt;</span> <span class="n">avg_RPG</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a good under bet&quot;</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">rebound_line</span> <span class="o">==</span> <span class="n">avg_RPG</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This bet is 50/50&quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a good over bet&quot;</span><span class="p">)</span>
+
         <span class="n">rebounds</span><span class="p">()</span>
-    <span class="k">elif</span> <span class="n">stat</span> <span class="o">==</span> <span class="s2">&quot;assists&quot;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">stats</span> <span class="o">==</span> <span class="s2">&quot;assists&quot;</span><span class="p">:</span>
+        <span class="k">def</span> <span class="nf">assists</span><span class="p">():</span>
+            <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+        <span class="c1"># Load the CSV file into a Pandas DataFrame</span>
+            <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;nba_player_stats.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Prompt the user to input a player name and points scored</span>
+            <span class="n">player_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the player&#39;s name: &quot;</span><span class="p">)</span>
+            <span class="n">assist_line</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the players assist line: &quot;</span><span class="p">))</span>
+
+<span class="c1"># Filter the DataFrame to only include rows for the input player name</span>
+            <span class="n">player_stats</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;NAME&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">player_name</span><span class="p">]</span>
+
+<span class="c1"># If the input player name is not found, print an error message and exit</span>
+            <span class="k">if</span> <span class="n">player_stats</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+               <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error: Player not found&quot;</span><span class="p">)</span>
+               <span class="n">exit</span><span class="p">()</span>
+ 
+<span class="c1"># Calculate the player&#39;s average points per game</span>
+            <span class="n">avg_APG</span> <span class="o">=</span> <span class="n">player_stats</span><span class="p">[</span><span class="s1">&#39;APG&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+            <span class="k">if</span> <span class="n">assist_line</span> <span class="o">&gt;</span> <span class="n">avg_APG</span><span class="p">:</span>
+               <span class="nb">print</span><span class="p">(</span><span class="n">assist_line</span> <span class="p">,</span> <span class="s2">&quot;&gt;&quot;</span> <span class="p">,</span> <span class="n">avg_APG</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+               <span class="nb">print</span><span class="p">(</span><span class="n">assist_line</span><span class="p">,</span> <span class="s2">&quot;&lt;&quot;</span> <span class="p">,</span> <span class="n">avg_APG</span><span class="p">)</span>
+
+<span class="c1"># Compare the input points scored to the player&#39;s average points per game</span>
+            <span class="k">if</span> <span class="n">assist_line</span> <span class="o">&gt;</span> <span class="n">avg_APG</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a good under bet&quot;</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">assist_line</span> <span class="o">==</span> <span class="n">avg_APG</span><span class="p">:</span>
+               <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This bet is 50/50&quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a good over bet&quot;</span><span class="p">)</span>
+
         <span class="n">assists</span><span class="p">()</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid option&quot;</span><span class="p">)</span>
-        
+
 <span class="n">process</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>20 &gt; 14.7
+This is a good under bet
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
