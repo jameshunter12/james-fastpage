@@ -315,10 +315,10 @@ For loop with shortcut (*) row expansion
 
 
 
-<div id="6029205c-b29c-47f6-b02b-f8f678936af8"></div>
+<div id="602f820b-5734-4f64-8087-7e4e058c0a3c"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#6029205c-b29c-47f6-b02b-f8f678936af8');
+var element = $('#602f820b-5734-4f64-8087-7e4e058c0a3c');
 
 /*
 * Creator: Nighthawk Coding Society
@@ -505,10 +505,10 @@ element.append(arr2D);
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">* Creator: Nighthawk Coding Society</span>
-<span class="sd">Sailing Ship Animation (long method)</span>
+<span class="sd">Driving Car Animation (long method)</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
-<span class="kn">import</span> <span class="nn">time</span> <span class="c1"># used for delay</span>
+<span class="kn">import</span> <span class="nn">time</span>  <span class="c1"># used for delay</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">clear_output</span>  <span class="c1"># jupyter specific clear</span>
 
 <span class="c1"># ANSI Color Codes</span>
@@ -516,228 +516,40 @@ element.append(arr2D);
 <span class="n">Color37</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[37m&quot;</span>
 
 
-<span class="c1"># As you can see, its not very optimal </span>
-<span class="k">def</span> <span class="nf">ship1</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;    |\ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;    |/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;\__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; \____/ &quot;</span><span class="p">)</span>
+<span class="c1"># As you can see, it&#39;s not very optimal</span>
+<span class="k">def</span> <span class="nf">car1</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   ______&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; _//_____\_&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;|  ______  |&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;| |      | |&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;| |      | |&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;| |______| |&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;|__________|&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m -------------------------------------------- </span><span class="se">\u001b</span><span class="s2">[37m&quot;</span><span class="p">)</span>
 
 
-<span class="k">def</span> <span class="nf">ship2</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;      |\ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;      |/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  \__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   \____/ &quot;</span><span class="p">)</span>
+<span class="c1"># Define the remaining car functions (car2, car3, etc.) similarly</span>
+
+<span class="k">def</span> <span class="nf">car2</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;     ______&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   _//_____\_&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  |  ______  |&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  | |      | |&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  | |      | |&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  | |______| |&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  |__________|&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ </span><span class="se">\u001b</span><span class="s2">[37m&quot;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">ship3</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;        |\ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;        |/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;    \__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;     \____/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ </span><span class="se">\u001b</span><span class="s2">[37m&quot;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">ship4</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;          |\ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;          |/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;      \__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;       \____/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ </span><span class="se">\u001b</span><span class="s2">[37m&quot;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">ship5</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;            |\ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;            |/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;        \__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;         \____/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m -------------------------------------------- </span><span class="se">\u001b</span><span class="s2">[37m&quot;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">ship6</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;              |\ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;              |/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;          \__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;           \____/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ </span><span class="se">\u001b</span><span class="s2">[37m&quot;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">ship7</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                |\ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                |/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;            \__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;             \____/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ </span><span class="se">\u001b</span><span class="s2">[37m&quot;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">ship8</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                  |\ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                  |/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;              \__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;               \____/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m -------------------------------------------- </span><span class="se">\u001b</span><span class="s2">[37m&quot;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">ship9</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                    |\ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                    |/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                \__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                 \____/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ </span><span class="se">\u001b</span><span class="s2">[37m&quot;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">ship10</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                      |\ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                      |/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                  \__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                   \____/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ </span><span class="se">\u001b</span><span class="s2">[37m&quot;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">ship11</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                        |\ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                        |/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                    \__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                     \____/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m -------------------------------------------- </span><span class="se">\u001b</span><span class="s2">[37m&quot;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">ship12</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                          |\ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                          |/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                      \__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                       \____/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ </span><span class="se">\u001b</span><span class="s2">[37m&quot;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">ship13</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                            |\ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                            |/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                        \__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                         \____/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ </span><span class="se">\u001b</span><span class="s2">[37m&quot;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">ship14</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                              |\ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                              |/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                          \__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                           \____/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ </span><span class="se">\u001b</span><span class="s2">[37m&quot;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">ship15</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                |\ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                |/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                            \__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                             \____/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m -------------------------------------------- </span><span class="se">\u001b</span><span class="s2">[37m&quot;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">ship16</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                  |\ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                  |/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                              \__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                               \____/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ </span><span class="se">\u001b</span><span class="s2">[37m&quot;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">ship17</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                    |\ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                    |/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                \__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                 \____/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m -------------------------------------------- </span><span class="se">\u001b</span><span class="s2">[37m&quot;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">ship18</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                      |\ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                      |/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                  \__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                   \____/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ </span><span class="se">\u001b</span><span class="s2">[37m&quot;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">ship19</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                        |\ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                        |/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                    \__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                     \____/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m -------------------------------------------- </span><span class="se">\u001b</span><span class="s2">[37m&quot;</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">ship20</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                          |\ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                          |/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                      \__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                       \____/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m -------------------------------------------- </span><span class="se">\u001b</span><span class="s2">[37m&quot;</span><span class="p">)</span>
 
 
 <span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">ship1</span><span class="p">()</span>
+<span class="n">car1</span><span class="p">()</span>
 <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
 <span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ship2</span><span class="p">()</span>
+<span class="n">car2</span><span class="p">()</span>
 <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
 <span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ship3</span><span class="p">()</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ship4</span><span class="p">()</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ship5</span><span class="p">()</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ship6</span><span class="p">()</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ship7</span><span class="p">()</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ship8</span><span class="p">()</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ship9</span><span class="p">()</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ship10</span><span class="p">()</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ship11</span><span class="p">()</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ship12</span><span class="p">()</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ship13</span><span class="p">()</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ship14</span><span class="p">()</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ship15</span><span class="p">()</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ship16</span><span class="p">()</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ship17</span><span class="p">()</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ship18</span><span class="p">()</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ship19</span><span class="p">()</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ship20</span><span class="p">()</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
+<span class="c1"># Call the remaining car functions (car3, car4, etc.) similarly</span>
 </pre></div>
 
     </div>
@@ -750,11 +562,14 @@ element.append(arr2D);
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>                                          |\ 
-                                          |/ 
-                                      \__ |__/ 
-                                       \____/ 
-<span class="ansi-blue-fg"> -------------------------------------------- </span><span class="ansi-white-fg">
+<pre>     ______
+   _//_____\_
+  |  ______  |
+  | |      | |
+  | |      | |
+  | |______| |
+  |__________|
+<span class="ansi-blue-fg"> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ </span><span class="ansi-white-fg">
 </span></pre>
 </div>
 </div>
@@ -774,44 +589,46 @@ element.append(arr2D);
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">* Creator: Nighthawk Coding Society</span>
-<span class="sd">Sailing Ship Animation (programatic method)</span>
+<span class="sd">Driving Car Animation (programmatic method)</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
-<span class="kn">import</span> <span class="nn">time</span> <span class="c1"># used for delay</span>
+<span class="kn">import</span> <span class="nn">time</span>  <span class="c1"># used for delay</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">clear_output</span>  <span class="c1"># jupyter specific clear</span>
 
 
 <span class="c1"># ANSI Color Codes</span>
-<span class="n">OCEAN_COLOR</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\u001B</span><span class="s2">[34m</span><span class="se">\u001B</span><span class="s2">[2D&quot;</span>
-<span class="n">SHIP_COLOR</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\u001B</span><span class="s2">[35m</span><span class="se">\u001B</span><span class="s2">[2D&quot;</span>
+<span class="n">ROAD_COLOR</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\u001B</span><span class="s2">[34m</span><span class="se">\u001B</span><span class="s2">[2D&quot;</span>
+<span class="n">CAR_COLOR</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\u001B</span><span class="s2">[35m</span><span class="se">\u001B</span><span class="s2">[2D&quot;</span>
 <span class="n">RESET_COLOR</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\u001B</span><span class="s2">[0m</span><span class="se">\u001B</span><span class="s2">[2D&quot;</span>
 
-<span class="k">def</span> <span class="nf">ship_print</span><span class="p">(</span><span class="n">position</span><span class="p">):</span>  <span class="c1"># print ship with colors and leading spaces according to position</span>
+<span class="k">def</span> <span class="nf">car_print</span><span class="p">(</span><span class="n">position</span><span class="p">):</span>  <span class="c1"># print car with colors and leading spaces according to position</span>
     <span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">RESET_COLOR</span><span class="p">)</span>
-    
+
     <span class="n">sp</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span> <span class="o">*</span> <span class="n">position</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">&quot;    |\   &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">&quot;    |/   &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">SHIP_COLOR</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">&quot;\__ |__/ &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">&quot; \____/  &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">OCEAN_COLOR</span> <span class="o">+</span> <span class="s2">&quot;--&quot;</span><span class="o">*</span><span class="mi">32</span> <span class="o">+</span> <span class="n">RESET_COLOR</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">&quot;   ______&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">&quot; _//_____\_&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">&quot;|  ______  |&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">&quot;| |      | |&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">&quot;| |      | |&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">&quot;| |______| |&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">&quot;|__________|&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">ROAD_COLOR</span> <span class="o">+</span> <span class="s2">&quot;--&quot;</span> <span class="o">*</span> <span class="mi">32</span> <span class="o">+</span> <span class="n">RESET_COLOR</span><span class="p">)</span>
 
 
-<span class="k">def</span> <span class="nf">ship</span><span class="p">():</span>  <span class="c1"># ship function, loop/controller for animation speed and times</span>
+<span class="k">def</span> <span class="nf">car</span><span class="p">():</span>  <span class="c1"># car function, loop/controller for animation speed and times</span>
     <span class="c1"># loop control variables</span>
     <span class="n">start</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># start at zero</span>
     <span class="n">distance</span> <span class="o">=</span> <span class="mi">60</span>  <span class="c1"># how many times to repeat</span>
     <span class="n">step</span> <span class="o">=</span> <span class="mi">2</span>  <span class="c1"># count by 2</span>
 
-    <span class="c1"># loop purpose is to animate ship sailing</span>
+    <span class="c1"># loop purpose is to animate car driving</span>
     <span class="k">for</span> <span class="n">position</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">distance</span><span class="p">,</span> <span class="n">step</span><span class="p">):</span>
-        <span class="n">ship_print</span><span class="p">(</span><span class="n">position</span><span class="p">)</span>  <span class="c1"># call to function with parameter</span>
+        <span class="n">car_print</span><span class="p">(</span><span class="n">position</span><span class="p">)</span>  <span class="c1"># call to function with parameter</span>
         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">2</span><span class="p">)</span>
 
-        
-<span class="n">ship</span><span class="p">()</span> <span class="c1"># activate/call ship function</span>
+
+<span class="n">car</span><span class="p">()</span>  <span class="c1"># activate/call car function</span>
 </pre></div>
 
     </div>
@@ -825,11 +642,126 @@ element.append(arr2D);
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-                                                              |\   
-                                                              |/   
-<span class="ansi-magenta-fg">                                                          \__ |__/ 
-                                                           \____/  
-</span><span class="ansi-blue-fg">----------------------------------------------------------------</span>
+                                                             ______
+                                                           _//_____\_
+                                                          |  ______  |
+                                                          | |      | |
+                                                          | |      | |
+                                                          | |______| |
+                                                          |__________|
+<span class="ansi-blue-fg">----------------------------------------------------------------</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Using-Sprite">Using Sprite<a class="anchor-link" href="#Using-Sprite"> </a></h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">clear_output</span>
+
+<span class="c1"># Define the sprite frames</span>
+<span class="n">frames</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">      _____</span>
+<span class="sd"> _.-&#39;`     ``&#39;-._</span>
+<span class="sd">|               |</span>
+<span class="sd">|               |</span>
+<span class="sd">|               |</span>
+<span class="sd">|               |</span>
+<span class="sd">|               |</span>
+<span class="sd">|               |</span>
+<span class="sd"> &#39;-._         _.-&#39;</span>
+<span class="sd">     `&#39;-----&#39;`</span>
+<span class="sd">    &quot;&quot;&quot;</span><span class="p">,</span>
+    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">      _____</span>
+<span class="sd"> _.-&#39;`     ``&#39;-._</span>
+<span class="sd">|    __     __   |</span>
+<span class="sd">| .-`  `-.&#39;  `-. |</span>
+<span class="sd">| |.-&#39;&#39;&#39;&#39;&#39;&#39;&#39;-.| |</span>
+<span class="sd">| ||         || |</span>
+<span class="sd">| ||         || |</span>
+<span class="sd"> &#39;-|         |-&#39;</span>
+<span class="sd">    &quot;&quot;&quot;</span><span class="p">,</span>
+    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">      _____</span>
+<span class="sd"> _.-&#39;`     ``&#39;-._</span>
+<span class="sd">|    __     __   |</span>
+<span class="sd">| .-`  `-.&#39;  `-. |</span>
+<span class="sd">| |   ^^    || |</span>
+<span class="sd">| ||         || |</span>
+<span class="sd">| ||         || |</span>
+<span class="sd"> &#39;-|         |-&#39;</span>
+<span class="sd">    &quot;&quot;&quot;</span><span class="p">,</span>
+    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">      _____</span>
+<span class="sd"> _.-&#39;`     ``&#39;-._</span>
+<span class="sd">|    __     __   |</span>
+<span class="sd">| .-`  `-.&#39;  `-. |</span>
+<span class="sd">| |   ^^    || |</span>
+<span class="sd">| ||   **    || |</span>
+<span class="sd">| ||         || |</span>
+<span class="sd"> &#39;-|         |-&#39;</span>
+<span class="sd">    &quot;&quot;&quot;</span><span class="p">,</span>
+    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">      _____</span>
+<span class="sd"> _.-&#39;`     ``&#39;-._</span>
+<span class="sd">|    __     __   |</span>
+<span class="sd">| .-`  `-.&#39;  `-. |</span>
+<span class="sd">| |   ^^    || |</span>
+<span class="sd">| ||   **    || |</span>
+<span class="sd">| ||   __    || |</span>
+<span class="sd"> &#39;-|         |-&#39;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+<span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">animate_sprite</span><span class="p">(</span><span class="n">frames</span><span class="p">,</span> <span class="n">delay</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span> <span class="c1">#This line defines a function named animate_sprite that takes two parameters: frames and delay. The frames parameter represents the list of frames for the animation, and the delay parameter represents the time delay between frames. The delay parameter is optional with a default value of 0.5 seconds.</span>
+    <span class="k">for</span> <span class="n">frame</span> <span class="ow">in</span> <span class="n">frames</span><span class="p">:</span> <span class="c1">#This line starts a for loop that iterates over each element (frame) in the frames list. It will execute the indented code block for each frame in the list.</span>
+        <span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1">#This line clears the current output in the console or Jupyter notebook cell, ensuring that each frame is displayed separately without cluttering the output.</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span> <span class="c1">#This line prints the current frame to the console or Jupyter notebook cell. The frame variable holds the ASCII art representation of the current frame, which is displayed as text.</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">delay</span><span class="p">)</span> <span class="c1">#This line pauses the execution of the program for a specified number of seconds (delay). It creates a delay between frames, controlling the speed of the animation.</span>
+
+<span class="c1"># Call the animation function</span>
+<span class="n">animate_sprite</span><span class="p">(</span><span class="n">frames</span><span class="p">)</span> <span class="c1">#This line calls the animate_sprite function and passes the frames list as an argument. It starts the execution of the animation by invoking the function.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+      _____
+ _.-&#39;`     ``&#39;-._
+|    __     __   |
+| .-`  `-.&#39;  `-. |
+| |   ^^    || |
+| ||   **    || |
+| ||   __    || |
+ &#39;-|         |-&#39;
+    
 </pre>
 </div>
 </div>
