@@ -80,7 +80,7 @@ input:focus {
 
 button {
     color: rgb(25, 25, 25);
-    background-color: rgba(102, 178, 255, 0.8);
+    background-color: rgba(58, 169, 106, 0.8);
     padding: 1em;
     border-radius: 8px;
     transition: all 0.25s ease;
@@ -292,7 +292,7 @@ button.addEventListener("click", async event => {
 </head>
 <body>
     <h1>NBA Team Players</h1>
-    <label for="team">Select a team:</label>
+    <label for="team">Select a team (dropdown):</label>
     <select id="team">
       <option value="ATL">Atlanta Hawks</option>
       <option value="BOS">Boston Celtics</option>
@@ -433,7 +433,6 @@ function getPlayers(team) {
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>NBA Team Players</h1>
     <label for="teamInput">Enter NBA Team (ex. LAL):</label>
     <input type="text" id="teamInput" />
     <button onclick="displayplayers()">Display Players</button>
