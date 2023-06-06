@@ -201,20 +201,25 @@ const fetchStats = async id => {
   return fullStats.data.data[0];
 };
 
-button.addEventListener("click", async event => {
-      event.preventDefault();
-      results.innerHTML = "";
-      let playerCount = 0;
+button.addEventListener("click", async event => { //This line adds an event listener to a button element. When the button is clicked, the specified callback function will be executed asynchronously.
+      event.preventDefault(); //
+      results.innerHTML = ""; //
+      let playerCount = 0; //This line declares a variable named playerCount and initializes it with the value 0. It will be used to keep track of the number of players processed.
       const playerList = await searchPlayers((searchFirst.value.trim() + " " + searchLast.value.trim()).trim());
-      for (let player of playerList) {
+      //This line calls the searchPlayers function, passing a series of the values in the searchFirst and searchLast elements as the search query. The await keyword is used to wait for the asynchronous function to complete and assign the returned result to the playerList variable.
+      for (let player of playerList) { 
+        // This line starts a loop that iterates over each player object in the playerList array.
         const stats = await fetchStats(player.id);
         if (stats) {
           playerCount++;
           const playerName = document.createElement("h3");
           playerName.append(`${player.first_name} ${player.last_name} (${player.position})`);
+          //These lines create an <h3> element using document.createElement() and set its content to the player's full name and position.
           const playerTeam = document.createElement("h3");
           playerTeam.append(player.team.full_name);
+          // These lines create another <h3> element and set its content to the full name of the player's team.
           const playerPoints = document.createElement("li");
+          // These lines create an <li> element and set its content to the player's points per game (PPG) statistic.
           playerPoints.append(`PPG: ${stats.pts}`);
           const playerAssists = document.createElement("li");
           playerAssists.append(`APG: ${stats.ast}`);
@@ -226,18 +231,26 @@ button.addEventListener("click", async event => {
           playerBlocks.append(`BPG: ${stats.blk}`);
           const playerStats = document.createElement("ul");
           playerStats.append(playerPoints, playerAssists, playerRebounds, playerSteals, playerBlocks);
+          // These lines create a <ul> element and append the <li> elements created for each player's statistic to it.
           const playerProfile = document.createElement("div");
           playerProfile.append(playerName, playerTeam, playerStats);
 
           // Compare points line with PPG
           const pointsLine = document.querySelector("#pointsLine").value;
+          // The .value property retrieves the current value of the selected element and assigns it to the pointsLine variable.
           const betPoints = document.createElement("div");
+          // It creates a new <div> element using the document.createElement() method and assigns it to the betPoints variable.
           betPoints.className = "bet-result";
           if (pointsLine < stats.pts) {
             betPoints.textContent = "This is a good over bet";
           } else {
             betPoints.textContent = "This is a good under bet";
           }
+          // It performs a conditional check: if the pointsLine value is less than the 
+          // stats.pts value (player's points per game), it sets the text content of the betPoints 
+          // element to "This is a good over bet". Otherwise, if pointsLine is greater than or equal 
+          // to stats.pts, it sets the text content to "This is a good under bet".
+
 
           const assistLine = document.querySelector("#assistLine").value;
           const betAssist = document.createElement("div");
@@ -279,8 +292,11 @@ button.addEventListener("click", async event => {
         }
       }
       if (playerCount === 0) {
+        // This line checks if the value of playerCount is equal to zero. It is used to determine if any players were found based on the search query.
         const noResults = document.createElement("p");
+        // If playerCount is zero, this line creates a new <p> element using the document.createElement() method and assigns it to the noResults variable.
         noResults.append("Oops, looks like we couldn't find the player you were looking for... Make sure that the name you entered is spelled correctly and try again!");
+        // Error checks by seeing if the player is in the list
         results.append(noResults);
       }
     });
@@ -451,35 +467,35 @@ function getPlayers(team) {
 
 
 <script>
-function displayplayers() {
-    var teamInput = document.getElementById("teamInput").value;
-    var outputDiv = document.getElementById("output");
+function displayplayers() { //This line starts the definition of a JavaScript function 
+    var teamInput = document.getElementById("teamInput").value; //This line retrieves the value entered in an HTML element with the ID "teamInput" and stores it in the variable teamInput. It assumes there is an input field with the ID "teamInput" in the HTML code.
+    var outputDiv = document.getElementById("output"); //This line retrieves the HTML element with the ID "output" and stores it in the variable outputDiv. It assumes there is a container element with the ID "output" in the HTML code, where the list of players will be displayed.
   
     // Clear previous output
     outputDiv.innerHTML = "";
 
     // Make an API call to get players for the given team
-    var apiUrl = 'https://www.balldontlie.io/api/v1/players?search=' + encodeURIComponent(teamInput);
-    fetch(apiUrl)
+    var apiUrl = 'https://www.balldontlie.io/api/v1/players?search=' + encodeURIComponent(teamInput); //This line constructs the API URL 
+    fetch(apiUrl) //fetchs the data within the API
         .then(function(response) {
-            return response.json();
+            return response.json(); //uses json to store data
         })
-        .then(function(data) {
+        .then(function(data) { //This line checks if the data object contains a data property and if it has a length greater than 0, indicating that players were found.
             // Display the players on the page
             if (data && data.data && data.data.length > 0) {
-                var players = data.data;
-                for (var i = 0; i < players.length; i++) {
-                    var player = players[i];
+                var players = data.data; //This line assigns the list of players retrieved from the API to the players variable.
+                for (var i = 0; i < players.length; i++) { //This line starts a loop that iterates over each player in the players array.
+                    var player = players[i]; //This line assigns the current player object to the player variable.
                     var playerDiv = document.createElement("div");
-                    playerDiv.textContent = player.first_name + " " + player.last_name;
+                    playerDiv.textContent = player.first_name + " " + player.last_name; //This line sets the text content of the playerDiv to the concatenation of the player's first name and last name.
                     outputDiv.appendChild(playerDiv);
                 }
             } else {
-                outputDiv.textContent = "No players found for the given name.";
+                outputDiv.textContent = "No players found for the given name."; //This is handling errors if a user inputs an incorrect name
             }
         })
         .catch(function(error) {
-            outputDiv.textContent = "An error occurred while fetching players: " + error.message;
+            outputDiv.textContent = "An error occurred while fetching players: " + error.message; //checks if there is a probelm fetching
         });
 }
 </script>
